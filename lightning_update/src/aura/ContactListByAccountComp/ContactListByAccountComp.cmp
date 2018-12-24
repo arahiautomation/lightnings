@@ -1,0 +1,42 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller ="ContactListByAccount" access="global"  >
+    <aura:handler name="init" action="{!c.getContactList}" value="{!this}"/> 
+    <aura:attribute name="contactlist" type="List"/>
+    <lightning:card title="Contacts">
+        <p class="slds-p-horizontal_small">
+      <div aura:id="recordViewForm">
+     <aura:Iteration items="{!v.contactlist}" var="contact"> 
+       <lightning:recordViewForm recordId ="{!contact.Id}" objectApiName="Contact">
+           <div class="slds-box slds-theme_default">
+           <lightning:input type = "checkbox" value = "{!contact.Id}" label = "Mark for deletion" aura:Id = "deleteContact"/>
+           <br/> 
+           <lightning:outputField fieldName ="FirstName"/>
+           <lightning:outputField fieldName ="LastName"/>
+           <lightning:outputField fieldName ="Email"/>
+           <lightning:outputField fieldName ="Phone"/>
+           </div>
+         </lightning:recordViewForm>
+         <br/>
+         </aura:Iteration>
+            </div>
+            <div aura:id="recordEditForm" class="formHide">
+             <aura:Iteration items="{!v.contactlist}" var="contact"> 
+       <lightning:recordEditForm recordId ="{!contact.Id}" objectApiName="Contact">
+           <div class="slds-box slds-theme_default">
+
+           <lightning:input value ="{!contact.FirstName}"/>
+            <lightning:input value ="{!contact.LastName}"/>   
+           <lightning:input  type="Email" value ="{!contact.Email}"/>
+               <lightning:input  type="tel" value ="Phone" pattern= "/([0-9]{3}/)[0-9]{3}-[0-9{4}]"/>
+           </div>
+         </lightning:recordEditForm>
+         <br/>
+         </aura:Iteration>
+            </div>
+        </p>
+    <aura:set Attribute="actions">
+    <lightning:button label ="new" onclick ="{!c.newContact}"/>
+    <lightning:button label ="Edit"  variant ="brand" name="edit" onclick ="{!c.editContact}"/>
+        <lightning:button label ="Delete" variant = "destructive" name="delete" onclick = "{!c.deleteContacts}"/>    
+    </aura:set>
+    </lightning:card>
+</aura:component>

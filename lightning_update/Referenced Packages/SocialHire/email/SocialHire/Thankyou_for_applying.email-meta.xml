@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Thankyou for applying</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SocialHire</letterhead>
+    <name>Thankyou for applying</name>
+    <style>freeForm</style>
+    <subject>Thanks for your interest in {!User.CompanyName}</subject>
+    <textOnly>Dear {!ContactPosition__c.Candidate__c},
+
+Thank you for sending your resume in response to the {!ContactPosition__c.Position__c} job posting.
+We will review your application and get back to you shortly.</textOnly>
+    <type>html</type>
+</EmailTemplate>

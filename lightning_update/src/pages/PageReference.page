@@ -1,0 +1,5 @@
+<apex:page controller="AccountRedirect">
+  <apex:pageBlock >
+    This is {!Account.Name}Account.
+    </apex:pageBlock>  
+</apex:page>

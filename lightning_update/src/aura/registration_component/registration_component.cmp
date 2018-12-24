@@ -1,0 +1,48 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="slds-align_absolute-center">
+        <div style="padding: 1rem;">
+  <div class="slds-align_absolute-center" style="text-align: center; width: 8rem; background-color: rgb(255, 255, 255);">
+    <div class="slds-border_top">
+   <div class="slds-size_2-of-2">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+  
+    <h1> Student registration form</h1>
+    </div>
+    </div>
+</div>
+    </div>
+    </div>
+</div>
+    <br/>
+    <aura:attribute name="StudentName" type="String" default=""/>
+    
+    <aura:attribute name="parentsname" type="String" default=""/>
+    <aura:attribute name="Starndedorclass" type="String" default=""/>
+    
+    <aura:attribute name="Noofhoursstudy" type="String[]" default="less than 1 hour,In between 1 to 4 hours,in between 5 to 8 hours,more than 8 hours "/>
+    <aura:attribute name="userResponse" type="String" />
+    <aura:attribute name="MobileNumber" type="Integer" default=""/>
+    <aura:attribute name="Haveyoutakencourse" type="boolean" default="false"/>
+    <aura:attribute name="Areyouintrestedinonlinecourse" type="Boolean"/>
+    <br/>
+
+<lightning:input label="Enter student Name" name="studentname" value="{!v.StudentName}"/>
+    <br/>
+<lightning:input label="Enter Parent Name" name="parentname" value="{!v.parentsname}"/>
+    <br/>
+    <lightning:select label="How  many Hours You Study?" name="studyhours" value="{!v.userResponse}">
+        <aura:iteration items="{!v.Noofhoursstudy}" var="hrs">
+            <option value ="{!hrs}" text = "{!hrs}"/>
+        </aura:iteration>  
+</lightning:select>
+    <br/>
+    <lightning:input label="Enter Mobile Number" name="mobilenumber" type="telephone" value="{!v.MobileNumber}"/>
+    <br/>
+        <lightning:input label="have you Interested in the course?" name="courseinterest" type="checkbox" />
+    <br/>
+        <aura:if isTrue="true">
+            yes!you have checked it
+        </aura:if>
+        <br/>
+       <Lightning:button label="submit"/>
+</aura:component>

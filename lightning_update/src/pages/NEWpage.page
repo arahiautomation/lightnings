@@ -1,0 +1,10 @@
+<apex:page controller="NewVisualforce">
+ <apex:form >
+  <apex:pageBlock title="AccountList">
+   <apex:dataTable value="{!accounts}" var="a">
+     <apex:column value="{!a.Name}" /> 
+       <apex:column value="{!a.phone}" /> 
+      </apex:dataTable>  
+     </apex:pageBlock> 
+    </apex:form>>   
+</apex:page>

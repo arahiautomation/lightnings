@@ -1,0 +1,9 @@
+<apex:component Controller="ComponentController" >
+    <apex:attribute name="ComponentValue" description="describes the ComponentValue"
+                   type="String" required="true" assignTo="{!ControllerValue}"/> 
+    <apex:pageBlock title="My Custom Components">
+        <i>componentvalue</i> is "{!ComponentValue}"
+        <br/>
+          <code>controllervalue</code> is "{!ControllerValue}"
+    </apex:pageBlock>
+</apex:component>

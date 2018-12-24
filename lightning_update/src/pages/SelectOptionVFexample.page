@@ -1,0 +1,30 @@
+<apex:page controller="SelectOptionController" >
+ <apex:form >
+ 
+      <apex:commandButton value="show"  action="{!show}"/>                
+   <apex:pageBlock > 
+    <apex:outputLabel >countries:</apex:outputLabel>
+    <apex:selectList size="1" value="{!selectedcountry}">
+       <apex:selectOptions value="{!countrylst}">
+        </apex:selectOptions>
+       </apex:selectList>
+       <br/>
+      <apex:outputLabel >Gender</apex:outputLabel>
+       <apex:selectRadio value="{!selectedgender}">
+           <apex:selectOptions value="{!genderlst}"></apex:selectOptions>
+       </apex:selectRadio>
+       <apex:outputLabel >
+        Hobbies:
+       </apex:outputLabel>
+       <apex:selectList value="{!hobbielst}">
+       <apex:selectOption itemValue="" itemLabel="None"></apex:selectOption>
+           <apex:selectOption itemValue="Reading" itemLabel="Reading"></apex:selectOption>
+           <apex:selectOption itemValue="Swimming" itemLabel="Swimming"></apex:selectOption>
+       </apex:selectList>
+  </apex:pageBlock>
+     <apex:pageBlock Title="selectedvalues" >
+     <apex:outputText value="{!selectedvalues}" style="color:red">
+         </apex:outputText>
+     </apex:pageBlock>
+    </apex:form>>   
+</apex:page>

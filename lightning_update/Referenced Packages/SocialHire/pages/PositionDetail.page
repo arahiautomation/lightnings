@@ -1,0 +1,250 @@
+<apex:page controller="CMFSH.ctrl_PositionDetail" showHeader="false"  >
+  <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />-->
+    <!-- <apex:stylesheet value="{!URLFOR($Resource.socialShare, 'jquery.share.css')}"/> -->
+   <!--  <apex:stylesheet value="{!URLFOR($Resource.jsocial, 'jsocialsStaticResource/jssocials-theme-flat.css')}"/> -->
+
+<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.css" />
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-flat.css" />
+<!--<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-classic.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-minima.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials-theme-plain.css" /> -->
+    <title>Job Position : {!posDetails.Name} - {!posDetails.CMFSH__Location__c}</title>
+    
+    <style>
+       /* .jssocials-share-link { border-radius: 50%; } */
+    </style>
+    
+  
+    
+<apex:composition template="{!$Site.Template}" >
+ <apex:define name="body" >
+     	<apex:stylesheet value="{!customCssUrl}"/>
+
+      <apex:form >
+        <apex:actionFunction name="applyHere" action="{!callCandidates}" />
+    </apex:form>
+      
+    
+    
+    <apex:form id="Cnd_form"  styleclass="form-horizontal"> 
+      <br/><br/>
+      <div class="row">
+           <div class="col-md-12">
+              
+               <!-- <div id="shareIcons" style="padding-left:30px;"></div> -->
+               <div id="shareRoundIcons"></div>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+      <div class="PositionHeadLayout">
+         <apex:outputText value="{!posDetails.Name}" styleClass="positionHeadTitle"/><br/>
+         <apex:outputText value="in" rendered="{!posDetails.Location__c != null  }"/>&nbsp;
+         <apex:outputText value="{!posDetails.CMFSH__Location__c}" styleClass="location"/><br/>
+         <apex:outputText value="Experience :" rendered="{!posDetails.Max_years_of_Exp__c != null || posDetails.Min_Years_of_Exp__c != null }"/>&nbsp;
+         <apex:outputText value="{!posDetails.CMFSH__Min_Years_of_Exp__c} "/>
+         <apex:outputText value="to " rendered="{!posDetails.Max_years_of_Exp__c != null  }"/>
+         <apex:outputText value="{!posDetails.CMFSH__Max_years_of_Exp__c} " />
+         <apex:outputText value="yrs." rendered="{!posDetails.Max_years_of_Exp__c != null || posDetails.Min_Years_of_Exp__c != null }"/>
+      </div>
+      </div>
+      </div>
+      
+     
+       
+       <apex:repeat value="{!fields}" var="f"> 
+       
+        <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+        <apex:outputPanel styleclass="positionfieldsLabel" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+        	<apex:outputText value="{!f.Label}"/>
+
+         </apex:outputPanel>
+       </apex:outputPanel>
+       </apex:outputPanel>
+           <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+           <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+          <apex:outputPanel styleclass="positionfieldsText" layout="block" rendered="{!posDetails[f.fieldPath] != null}"> 
+          
+              <apex:outputfield value="{!posDetails[f.fieldPath]}"/>
+         </apex:outputPanel>
+         </apex:outputPanel>
+        </apex:outputPanel>
+       </apex:repeat>
+       
+       <!--
+            
+      <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Summary__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Summary__c != null}"> 
+      <apex:outputPanel styleclass="skillsDesCSS" layout="block" rendered="{!posDetails.Summary__c != null}"> 
+      
+          <apex:outputfield value="{!posDetails.Summary__c}"/>
+     </apex:outputPanel>
+     </apex:outputPanel>
+    </apex:outputPanel>
+    
+    <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Job_Description__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Job_Description__c != null}">   
+      <apex:outputPanel styleclass="jobDesheadCSS" layout="block" rendered="{!posDetails.Job_Description__c != null}">          
+      		{!$ObjectType.Position__c.Fields.Job_Description__c.Label}
+       </apex:outputPanel>
+       </apex:outputPanel>
+    </apex:outputPanel>
+      <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Job_Description__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Job_Description__c != null}">   
+      <apex:outputPanel styleclass="jobDesCSS" layout="block" rendered="{!posDetails.Job_Description__c != null}">
+      
+          <apex:outputField value="{!posDetails.Job_Description__c}"/>
+          
+      
+      </apex:outputPanel>
+      </apex:outputPanel>
+       </apex:outputPanel>
+       
+       
+        <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Job_Type__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Job_Type__c != null}">   
+      <apex:outputPanel styleclass="jobDesheadCSS" layout="block" rendered="{!posDetails.Job_Type__c != null}">          
+      		{!$ObjectType.Position__c.Fields.Job_Type__c.Label}
+       </apex:outputPanel>
+       </apex:outputPanel>
+    </apex:outputPanel>
+      <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Job_Type__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Job_Type__c != null}">   
+      <apex:outputPanel styleclass="jobDesCSS" layout="block" rendered="{!posDetails.Job_Type__c != null}">
+      
+          <apex:outputField value="{!posDetails.Job_Type__c}"/>
+          
+      
+      </apex:outputPanel>
+      </apex:outputPanel>
+       </apex:outputPanel>
+       
+      
+          
+          
+        <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Skills_Required__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Skills_Required__c != null}">  
+      <apex:outputPanel styleclass="skillsCSS" layout="block" rendered="{!posDetails.Skills_Required__c != null}">
+          {!$ObjectType.Position__c.Fields.Skills_Required__c.Label}
+      </apex:outputPanel> 
+      </apex:outputPanel>
+       </apex:outputPanel> 
+        <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Skills_Required__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Skills_Required__c != null}">      
+      <apex:outputPanel styleclass="skillsDesCSS" layout="block"  rendered="{!posDetails.Skills_Required__c != null}">
+          <apex:outputText value="{!posDetails.Skills_Required__c }"/>
+       </apex:outputPanel>
+      </apex:outputPanel>
+       </apex:outputPanel> 
+       <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}">     
+      <apex:outputPanel styleclass="skillsCSS" layout="block"  rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}">      
+			{!$ObjectType.Position__c.Fields.Required_Qualifications_and_Skills__c.Label}
+
+       </apex:outputPanel>
+       </apex:outputPanel>
+       </apex:outputPanel> 
+        <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}"> 
+       <apex:outputPanel styleclass="skillsDesCSS" layout="block"  rendered="{!posDetails.Required_Qualifications_and_Skills__c != null}">            
+      
+          <apex:outputField value="{!posDetails.Required_Qualifications_and_Skills__c}"/>
+      </apex:outputPanel>
+      </apex:outputPanel>
+       </apex:outputPanel>
+       <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Responsibilities__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Responsibilities__c != null}">   
+      <apex:outputPanel styleclass="skillsCSS" layout="block"  rendered="{!posDetails.Responsibilities__c != null}">            
+			{!$ObjectType.Position__c.Fields.Responsibilities__c.Label}
+      </apex:outputPanel> 
+      </apex:outputPanel>
+       </apex:outputPanel>
+       <apex:outputPanel styleclass="row" layout="block" rendered="{!posDetails.Responsibilities__c != null}"> 
+       <apex:outputPanel styleclass="col-md-12" layout="block" rendered="{!posDetails.Responsibilities__c != null}"> 
+      <apex:outputPanel styleclass="skillsDesCSS" layout="block"  rendered="{!posDetails.Responsibilities__c != null}">                 
+      
+          <apex:outputField value="{!posDetails.Responsibilities__c}"/>
+      </apex:outputPanel> 
+      </apex:outputPanel>
+       </apex:outputPanel>
+       -->
+      
+      <div class="clearfix"></div>
+      <div class="form-group">
+      <label for="apply" class="control-label col-xs-4"></label>
+           <!--  <apex:image url="{!URLFOR($Resource.Apply_Blue, 'apply_here.jpg')}" styleClass="applyHere" onclick="applyHere();return false;" /> -->
+          <div class="col-xs-6">
+           <apex:commandButton action="{!callCandidates}" value="Apply Here" styleClass="btn btn-primary" id="apply"/>
+           <apex:commandButton action="{!cancel}" value="Cancel" styleClass="btn btn-primary" id="cancel"/>
+            </div>
+      </div>
+       
+      <!--<div class="clearfix"></div> -->
+    </apex:form>
+    <div style="height:30px;">
+    </div>
+    
+    
+    <div class="socilCSS">
+        
+     
+    </div>
+    
+ <!--   <apex:includeScript value="{!URLFOR($Resource.socialShare, '/jquery.min.js')}"/>  
+    
+     <apex:includeScript value="{!URLFOR($Resource.socialShare, '/jquery.share.js')}"/>  
+     
+     
+    <script type="text/javascript" language="JavaScript">
+    
+   // $.noConflict();
+
+     var gapiPromise = (function(){
+    var deferred = $.Deferred();
+    window.onLoadCallback = function(){
+        deferred.resolve(gapi);
+    };
+    return deferred.promise()
+    }());
+
+    var authInited = gapiPromise.then(function(){
+        
+            gapi.client.setApiKey('AIzaSyCbDyid6fADb2_B50GDNV6wE3W5daDRQ6I');
+            gapi.client.load('urlshortener', 'v1').then(makeRequest);
+       
+    })
+    function makeRequest() {
+         $('#shareIcons').share({
+        networks: ['facebook','pinterest','googleplus','twitter','linkedin','email']
+    });
+        
+    }
+    
+    
+  
+jQuery(function ($) {
+
+   
+    
+    
+
+});
+</script>
+
+<script src="https://apis.google.com/js/client.js?onload=onLoadCallback"> </script> -->
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
+<script>
+        $("#shareRoundIcons").jsSocials({
+            showLabel: false,
+            showCount: "inside",
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+            
+        });
+    </script>
+  </apex:define>
+</apex:composition>
+</apex:page>

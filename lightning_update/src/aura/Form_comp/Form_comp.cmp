@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="contactList" type="List"/>
+    <aura:attribute name="contact" type="Contact" default="{
+                    'sobjectType':'Contact',
+                     'firstname'  :'',
+                      'lastname':'',
+                       'Email' :'',
+                        'phone':''                                      
+                    }">
+    </aura:attribute>
+    
+     <lightning:card title="CONTACT DETAILS FORM">
+         
+   
+        
+         <p class="slds-p-horizontal_small">
+       
+        <lightning:input type="text" label="FIRST NAME" name="firstname"/> 
+       
+        <lightning:input type="text" label="LAST NAME" name="lastname"/> 
+        <lightning:input type="Email" label="EMAIL" name="email"/> 
+        <lightning:input type="tel" label="CONTACT NUMBER" name="phone"/> 
+             <br/>
+             <lightning:button  label="continue"  variant="brand" name="continue" onclick="{!c.continueForm}"/>
+          
+        </p>
+    </lightning:card>
+</aura:component>

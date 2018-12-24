@@ -1,0 +1,7 @@
+<aura:component controller="contactSearchController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global"  >
+    <aura:attribute name="searchkey" type="string"/>
+    <aura:registerEvent name="contactsearchcomplete" type="c.searchcompleteevent"/>
+    <lightning:input type="text" name="Enter Contact Name" aura:id="searchkey" value="{!v.searchkey}"/>
+    <lightning:button label="search" onclick="{!c.dosearch}"/>
+   
+</aura:component>

@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	   
+    <div class="slds-m-around--xx-large">
+        <div class="slds-form--stacked">
+            <div class="slds-form-element">  
+                <div class="slds-form-element__control">
+                    <ui:inputNumber aura:id="inputAge" label="Enter your age" class="slds-input"/>
+                </div>
+            </div>
+            <div class="slds-m-around--medium">
+                <button class="slds-button slds-button--brand" onclick="{!c.validateAge}">Validate Age</button>
+            </div>
+        </div>
+    </div>  
+
+</aura:component>

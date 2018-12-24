@@ -1,0 +1,229 @@
+<apex:page id="Cnd_page" showHeader="false" title="{!$Label.site.site_login}" standardController="CMFSH__Position__c"  extensions="CMFSH.ctrl_Position_site">
+ 
+   <style>
+   .joblistingTitle
+   {
+    overflow:auto;
+   }
+   
+   a.menuLink:link
+   {
+       color: #494942;
+   }
+   a.menuLink:visited
+   {
+       color: #94D7E8;
+   }
+   a.menuLink:hover
+   {
+       color: #94D7E8;
+   }
+  
+    </style> 
+    
+    <script>
+    /* function executed when a key is pressed in any of the input boxes */
+    function keypress(ev)
+    {
+        /* check we have the correct event */
+        if (window.event)
+        {
+            ev=window.event;
+        }
+        
+        /* which key was pressed ? */
+        var keyCode;
+        if (ev.keyCode)
+        {
+            keyCode=ev.keyCode;
+        }
+        else
+        {
+            keyCode=ev.charCode;
+        }
+        
+        /* assume the event can propagate - we will set this to false if the key
+           turns out to be the return key */
+        var result=true;
+
+        if (keyCode == 13)
+        {
+            /* it was the return key - find the save button */
+            var ele=document.getElementById('{!$Component.Cnd_page.SiteTemplate.searchfrm.searchbtn}');
+
+            /* ask the user if they are sure */
+            
+                /* the user has confirmed - programmatically click the button to submit the form */
+                ele.click();
+            
+
+            /* stop the event propagating */
+            result=false;
+        }
+        
+        return result;
+    }
+  </script>
+    
+    <apex:composition template="{!$Site.Template}" >
+    <apex:define name="body" > 
+    <apex:stylesheet value="{!customCssUrl}"/>
+    <apex:form styleClass="form-horizontal" id="searchfrm" >
+        <apex:outputPanel rendered="{!$Setup.SiteDomain__c.Hide_Search_on_home_page__c == false}">
+        <div class="panel panel-default ">
+            <div class="panel-heading jhpanel"><h3>Search Openings</h3></div>
+            <div class="panel-body">
+                
+                <div class="form-group">
+                <label for="countryid" class="col-sm-3 control-label">{!$ObjectType.Position__c.Fields.country__c.Label}</label>
+                <div class="col-sm-3">
+                  <apex:selectList value="{!countries}" size="1" id="countryid">
+                            <apex:selectOptions value="{!country_region}"/>
+                  </apex:selectList>
+                </div>
+                <label for="keywordid" class="col-sm-3 control-label">  Search by Keyword</label>
+                <div class="col-sm-3">
+                    <apex:inputText value="{!keyword}" id="keywordid" onkeypress="return keypress(event);" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="departmentid" class="col-sm-3 control-label"> {!$ObjectType.Position__c.Fields.Departments__c.Label}</label>
+                <div class="col-sm-3">
+                  <apex:selectList value="{!seldepartments}" size="1" id="departmentid">
+                            <apex:selectOptions value="{!departments}"/>
+                        </apex:selectList>
+                </div>
+              </div>
+              <div class="form-group">
+                
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-9">
+                    <apex:commandButton value="Search" action="{!search}" rerender="pos" id="searchbtn" status="fetchSearch"/>
+                    <apex:actionStatus id="fetchSearch" >
+                    <apex:facet name="start" >
+                      <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                    </apex:actionStatus>
+                </div>
+              </div>
+               
+            </div>
+        </div>
+        </apex:outputPanel>
+<!--        
+    </apex:form>
+    
+    <apex:form id="pos"> -->
+    
+        <div class="row">
+            <div class="col-xs-12">
+            <apex:outputPanel id="pos">
+            <div class="table-responsive"> 
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>{!$ObjectType.CMFSH__Position__c.Fields.name.Label}</th>
+                            <th>{!$ObjectType.CMFSH__Position__c.Fields.CMFSH__Location__c.Label}</th>
+                            <th>{!$ObjectType.CMFSH__Position__c.Fields.CMFSH__Departments__c.Label}</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!Positions}" var="p">
+                        <tr>
+                            <td>
+                                <apex:commandLink value="{!p.Name}" id="theCommandLink" action="{!callPositionDetail}"  title="Click to view more details regarding this job">
+                                    <apex:param name="p1"   value="{!p.id}"  assignTo="{!rec_Id}"/>
+                                </apex:commandLink>
+                            </td>
+                            <td>
+                                <apex:outputText value="{!p.CMFSH__Location__c}" />  
+                                <apex:outputText value=", " rendered="{!p.Location_State__c != null }"/>  
+                                <apex:outputText value="{!p.CMFSH__Location_State__c}" /> 
+                                <apex:outputText value=", " rendered="{!p.CMFSH__Country__c != null}"/>  
+                                <apex:outputText value="{!p.CMFSH__Country__c}" /> 
+                            </td>
+                            <td>
+                                <apex:outputText value="{!p.CMFSH__Departments__c}" /> 
+                            </td>
+                            
+                        </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </div>
+            </apex:outputPanel>
+        </div>
+        
+    </div>
+    
+    
+        
+            
+            <apex:panelGrid columns="7" id="pagi">
+                <apex:commandButton status="fetchStatus" reRender="pos" value="|<" action="{!first}" disabled="{!!hasPrevious}" title="First Page"/>
+                <apex:commandButton status="fetchStatus" reRender="pos" value="<" action="{!previous}" disabled="{!!hasPrevious}" title="Previous Page"/>
+                <apex:commandButton status="fetchStatus" reRender="pos" value=">" action="{!next}" disabled="{!!hasNext}" title="Next Page"/>
+                <apex:commandButton status="fetchStatus" reRender="pos" value=">|" action="{!last}" disabled="{!!hasNext}" title="Last Page"/>
+                <apex:outputText >{!(pageNumber * size)+1-size}-{!IF((pageNumber * size)>noOfRecords, noOfRecords,(pageNumber * size))} of {!noOfRecords}</apex:outputText>
+                <apex:commandButton status="fetchStatus" reRender="pos" value="Refresh" action="{!refresh}" title="Refresh Page"/>
+                <apex:actionStatus id="fetchStatus" >
+                <apex:facet name="start" >
+                  <img src="/img/loading.gif" />                    
+                </apex:facet>
+                </apex:actionStatus>
+            </apex:panelGrid>
+       
+    </apex:form>
+    <!-- Adding Pagination and Search Criteria so commenting out the previous code
+            <apex:form id="Cnd_form" styleclass="form-horizontal">
+            <h4>&nbsp;</h4>
+                <apex:repeat value="{!jobCroup_set}" var="jobG">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="jobGroupDiv">
+                            <div class="groupHeader">
+                                <h4 ><apex:outputText value="{!jobG}" ></apex:outputText>   </h4>  
+                            </div>
+                        </div>  
+                            </div>
+                    </div>
+                        <apex:repeat value="{!jobGroup_map[jobG]}" var="position" id="theRepeat"> 
+                            <div class="row rowcss"> 
+
+                                <div class="col-md-6" >
+                                    <div class="jobGroupDet">
+                                    <apex:commandLink value="{!position.Name}" id="theCommandLink" action="{!callPositionDetail}" styleClass="menuLink" title="Click to view more details regarding this job">
+                                        <apex:param name="p1"   value="{!position.id}"  assignTo="{!rec_Id}"/>
+                                    </apex:commandLink>
+                                </div>
+                                </div>
+                                <div class=" col-md-6">
+                                <div class="joblistingLocation">
+                                    <apex:outputText value="{!position.Location__c}" />  
+                                    <apex:outputText value=", " rendered="{!position.Location_State__c != null }"/>  
+                                    <apex:outputText value="{!position.Location_State__c}" /> 
+                                    <apex:outputText value=", " rendered="{!position.Country__c != null}"/>  
+                                    <apex:outputText value="{!position.Country__c}" />  &nbsp;
+                                </div> 
+                                </div>                     
+                            </div>
+                            <div class="spacers">
+                               
+                            </div>
+                        </apex:repeat>
+                    
+                 </apex:repeat> 
+                         
+            </apex:form>
+            -->
+    
+    </apex:define>
+  </apex:composition>
+          
+  
+  
+</apex:page>

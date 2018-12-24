@@ -1,0 +1,25 @@
+<apex:page controller="Accountclass" >
+<Apex:form > 
+    <apex:pageBlock title="Account List">
+    <apex:inputText value="{!keyword}"/>
+       <apex:commandButton value="search" action="{!search}"/> 
+        <apex:commandButton value="searchall" action="{!searchall}"/>
+      <apex:pageBlockTable value="{!acc}" var="a">
+       <apex:column >
+           <apex:commandLink value="{!a.Name}">
+               <apex:param name="accountid" value="{!a.id}"/>
+           </apex:commandLink>
+       </apex:column>
+       <apex:column value="{!a.phone}"/>
+          <apex:column value="{!a.type}"/>
+          <apex:column value="{!a.industry}"/>
+        </apex:pageBlockTable> 
+     
+        
+    </apex:pageBlock>
+    <apex:pageBlock >
+    <apex:detail subject="{!$CurrentPage.parameters.accountid}" relatedList="false" inlineEdit="true"/>
+    
+    </apex:pageBlock>
+    </Apex:form>
+</apex:page>

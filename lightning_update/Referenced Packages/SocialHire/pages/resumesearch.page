@@ -1,0 +1,410 @@
+<apex:page standardController="CMFSH__Position__c" extensions="CMFSH.CVFE_FileSearch" sidebar="false" showHeader="true"  cache="false">
+<style>
+/*
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+*/
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+    }
+a.contentActionLink img {
+    background: transparent url(/img/chatterfiles/chatterfiles16_sprite.png) no-repeat;
+    height: 16px;
+    width: 16px
+}
+
+a.contentActionLink .downloadItemIcon {
+    background-position: 0 -20px
+}
+
+a.contentActionLink .previewItemIcon {
+    background-position: 0 -2px
+}
+
+a.contentActionLink .openUrlItemIcon {
+    background-position: 0 -2px
+}
+
+.fileTypeIcon {
+    position: relative
+}
+div.star_rating {
+    background: transparent url(/img/v1.1/app/stars/bkgd_stars_big.gif) no-repeat;
+    display: inline-block;
+    height: 30px!important;
+    width: 200px!important
+}
+
+div.small_stars {
+    background: transparent url(/img/v1.1/app/stars/bkgd_stars.gif) no-repeat;
+    height: 16px!important;
+    width: 100px!important
+}
+
+div.tiny_stars {
+    background: transparent url(/img/v1.1/app/stars/bkgd_stars_tiny.gif) no-repeat;
+    height: 10px!important;
+    width: 70px!important
+}
+
+div.star_rating div.hit_rating {
+    width: 37px!important;
+    height: 30px!important;
+    display: inline-block
+}
+
+div.small_stars div.hit_rating {
+    width: 18px!important;
+    height: 16px!important
+}
+
+div.tiny_stars div.hit_rating {
+    width: 11px!important;
+    height: 10px!important
+}
+
+div.tiny_stars div.hit_hover {
+    background-color: #fff!important;
+    opacity: .6!important;
+    filter: alpha(opacity=60)!important
+}
+
+div.edit_stars div.hit_rating {
+    cursor: pointer!important
+}
+
+#star_rating_none {
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width: 18px;
+    background: transparent url(/img/v1/app/stars_none.gif) 0 0 no-repeat;
+}
+
+div.stars_new_big {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    cursor: help;
+    background: transparent url(/img/v1/app/stars/bkgd_stars_row.gif) 0 0 no-repeat
+}
+.form-group select.form-control.set-width {
+    width: 200px;
+}
+.pin-bottom-right, .pin-top-right {
+    position: absolute!important;
+    right: 15px;
+    top: 10px;
+}
+
+.download .downloadItemIcon {
+    background-position: 0 -20px;
+}
+.download img {
+    height: 16px;
+    width: 16px;
+}
+
+body
+{
+    font-size: 14px;
+}
+
+</style>
+<apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<div class="container-fluid">
+    
+<div class="row">
+    <h2>Search Resumes</h2>
+</div>
+ <apex:form id="search">
+     <div class="form-group">
+        <!-- <apex:outputPanel id="savedSearch">
+        
+		<!--  <select id="saved_search" name="saved_search" class="pin-top-right set-width form-control"><option value="0">Run a saved search...</option><optgroup label="My Searches"><option value="/app/resumes/search/1////0/0/0//">Android Developer</option></optgroup></select>	
+		
+		
+		
+        <apex:selectList value="{!selectedSavedSearch}" size="1" styleclass="pin-top-right set-width form-control"> 
+            <apex:selectOptions value="{!savedSearches}" /> 
+            <apex:actionSupport event="onchange" action="{!runsavedsearch}" rerender="results,SOSLBox"/>
+            
+        </apex:selectList>
+        </apex:outputPanel> -->
+        </div>
+  <div class="row" id="simplesearch">
+     <div class="col-sm-6 col-sm-offset-2" >
+            
+         
+             <div class="form-group row">
+               
+            <div class="col-xs-9">
+             <apex:inputText value="{!keywords}" styleclass="form-control"  />      
+            
+            </div>
+            <div class="col-xs-1">
+            <apex:commandButton action="{!search}" value="Search" styleclass="btn"   rerender="results,msgs"/>
+            </div>
+            <div class="col-xs-2">
+            <apex:commandbutton action="{!ReturnToPosition}" styleclass="btn"  value="Return to Position" /> 
+            </div>
+        </div>
+        
+       <!-- <div class="text-center">
+            
+        </div>
+        -->
+        
+       
+        <apex:pageMessages id="msgs" />
+           <!-- <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                   <apex:form >
+                   <apex:inputText value="{!keywords}" styleclass="form-control"  />
+                   
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                    </apex:form>
+                </div>
+            </div> -->
+        </div>
+  </div>
+  <!--
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-2" >
+          <a href="#advanced" class="nav-toggle"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Advanced Search</a>
+          <div id="advanced" style="display:none">
+            <apex:outputpanel id="SOSLBox">
+          <div class="form-group row" >
+          <div class="col-xs-9">
+               <apex:inputTextarea value="{!SOSLQuery}" rows="7" styleclass="form-control"  />   
+          </div>
+          <div class="col-xs-1">
+            <apex:commandButton action="{!SOSLSearch}" value="Search" styleclass="btn"  rerender="results,msgs"/>
+          </div>
+          <div class="col-xs-2">
+              
+              
+
+            </div>
+          </div>
+          </apex:outputpanel>
+          </div>
+      </div>
+  </div> -->
+  <div class="row col-sm-10 col-sm-offset-1 custyle">
+      <apex:outputPanel id="results">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <!--<th class="text-center">Action</th> -->
+            <th></th>
+            <th>Candidate</th>
+            <th>Email</th>
+            <th>Phone</th>
+            
+            
+        </tr>
+    </thead>
+   <!--<apex:form id="results"> -->
+   
+    <apex:repeat var="c" value="{!cv}" >
+            <tr>
+                <td><!--
+                    <a id="Title_{!c.id}"
+                 
+                    href="javascript:OverlayDialogElement.showFilePreview('docViewerOverlay','{!c.id}_title','/_swf/196007/sfc','{!c.id}','chatter_bubble','false','docViewerContainer',false,'{!c.FileExtension}',false,'');" class="contentActionLink" shouldstayinownframe="true">
+                   <img src="/img/s.gif" alt="" width="1" height="1" class="chatterFileIcon previewItemIcon" title="Preview"/> 
+                    </a>
+                    -->
+                    <a class="download" href="/sfc/servlet.shepherd/version/download/{!c.id}?asPdf=false&operationContext=CHATTER" shouldstayinownframe="true" ><img src="/img/s.gif" alt="" width="1" height="1" class="downloadItemIcon"/><i class="fa fa-download" aria-hidden="true"></i></a>
+                    
+                    <a href="/{!c.contact__c}" id="lookup{!c.contact__c}" 
+                    onblur="LookupHoverDetail.getHover('lookup{!c.contact__c}').hide();" 
+                    onfocus="LookupHoverDetail.getHover('lookup{!c.contact__c}', '/{!c.contact__c}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&').show();" onmouseout="LookupHoverDetail.getHover('lookup{!c.contact__c}').hide();" onmouseover="LookupHoverDetail.getHover('lookup{!c.contact__c}', '/{!c.contact__c}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&nocache=1484248496011').show();">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>    </a>
+                    <apex:commandlink action="{!addToPosition}"   rerender="results,msgs">
+                        <apex:param value="{!c.CMFSH__Contact__c}" assignTo="{!toAddToPosition}" name="toAddToPosition"/>
+                        <i class="fa fa-plus-circle text-success" aria-hidden="true"></i>
+                        
+                    </apex:commandlink>
+
+                </td>
+                <!--<td><apex:outputfield value="{!c.CMFSH__Contact__c}"></apex:outputfield></td>
+                <td><a href="/{!c.id} ">{!c.title}</a></td>
+                <td>{!c.ContentSize}</td> -->
+                <!--<td><apex:outputfield value="{!c.CMFSH__Contact__c}"></apex:outputfield></td> -->
+                <td><a href="/{!c.contact__c}" id="lookup{!c.contact__c}u" 
+                    onblur="LookupHoverDetail.getHover('lookup{!c.contact__c}u').hide();" 
+                    onfocus="LookupHoverDetail.getHover('lookup{!c.contact__c}u', '/{!c.contact__c}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&').show();" onmouseout="LookupHoverDetail.getHover('lookup{!c.contact__c}u').hide();" onmouseover="LookupHoverDetail.getHover('lookup{!c.contact__c}u', '/{!c.contact__c}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&nocache=1484248496011').show();">{!c.contact__r.name}</a>
+</td>
+                <td>{!c.Contact__r.email}</td> 
+                <td>{!c.Contact__r.Phone}</td>
+                 
+
+                  <!--
+                <td class="text-center">
+                   
+                    <apex:commandlink action="{!addToPosition}" value="Add To Position" styleclass="btn btn-success" rerender="results,msgs">
+                        <apex:param value="{!c.CMFSH__Contact__c}" assignTo="{!toAddToPosition}" name="toAddToPosition"/>
+                    </apex:commandlink>
+                    
+                </td>-->
+            </tr>
+     </apex:repeat> 
+     <apex:repeat var="c" value="{!con}" >
+          <tr>
+                <td>
+                    <!--<a id="Title_{!c.id}"
+                 
+                    href="javascript:OverlayDialogElement.showFilePreview('docViewerOverlay','{!c.CMFSH__Resume_Id__c}_title','/_swf/196007/sfc','{!c.CMFSH__Resume_Id__c}','chatter_bubble','false','docViewerContainer',false,'',false,'');" class="contentActionLink" shouldstayinownframe="true">
+                   <img src="/img/s.gif" alt="" width="1" height="1" class="chatterFileIcon previewItemIcon" title="Preview"/> 
+                    </a> -->
+                    <a class="download" href="/sfc/servlet.shepherd/version/download/{!c.id}?asPdf=false&operationContext=CHATTER" shouldstayinownframe="true" ><img src="/img/s.gif" alt="" width="1" height="1" class="downloadItemIcon"/>Download</a>
+                    
+                    <a href="/{!c.id}" id="lookup{!c.id}" 
+                    onblur="LookupHoverDetail.getHover('lookup{!c.Id}').hide();" 
+                    onfocus="LookupHoverDetail.getHover('lookup{!c.id}', '/{!c.id}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&').show();" onmouseout="LookupHoverDetail.getHover('lookup{!c.id}').hide();" onmouseover="LookupHoverDetail.getHover('lookup{!c.Id}', '/{!c.Id}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&nocache=1484248496011').show();"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  </a>
+                    <apex:commandlink action="{!addToPosition}"   rerender="results,msgs">
+                        <apex:param value="{!c.Id}" assignTo="{!toAddToPosition}" name="toAddToPosition"/>
+                        <i class="fa fa-plus-circle text-success" aria-hidden="true"></i>
+                        
+                    </apex:commandlink>
+                </td>
+               <!-- <td><apex:outputfield value="{!c.name}"></apex:outputfield></td> -->
+                <td><a href="/{!c.id}" id="lookup{!c.id}u" 
+                    onblur="LookupHoverDetail.getHover('lookup{!c.Id}u').hide();" 
+                    onfocus="LookupHoverDetail.getHover('lookup{!c.id}u', '/{!c.id}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&').show();" onmouseout="LookupHoverDetail.getHover('lookup{!c.id}u').hide();" onmouseover="LookupHoverDetail.getHover('lookup{!c.Id}u', '/{!c.Id}/m?retURL=%2Fapex%2Fcmfsh__resumesearch%3Fid%3D{!PositionId}&isAjaxRequest=1&nocache=1484248496011').show();">{!c.name}</a>
+</td>
+                <td>{!c.email}</td> 
+                <td>{!c.Phone}</td>
+                 
+
+                  <!--
+                <td class="text-center">
+                   
+                    <apex:commandlink action="{!addToPosition}" value="Add To Position" styleclass="btn btn-success" rerender="results,msgs">
+                        <apex:param value="{!c.CMFSH__Contact__c}" assignTo="{!toAddToPosition}" name="toAddToPosition"/>
+                    </apex:commandlink>
+                    
+                </td>-->
+            </tr>
+     </apex:repeat>
+     <!--</apex:form> -->
+    </table>
+   </apex:outputPanel>
+    </div>
+    </apex:form> 
+    
+    
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Enter the Search Name</h4>
+        </div>
+         <apex:form >
+        <div class="modal-body">
+            
+           
+            <apex:inputText value="{!SavedSearchName}"  styleclass="form-control"   />
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <apex:commandbutton value="Save" action="{!savesearch}" rerender="savedSearch" onComplete="hidemodal();"/>
+        </div>
+         </apex:form>
+      </div>
+      
+    </div>
+  </div>
+    
+    
+    
+</div>
+
+
+
+ <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ <script src="/EXT/ext-3.3.3/ext-core.js"></script>
+ <script type="text/javascript">
+
+function showPreviewDialogForContentDocument(contentDocumentId, titleElementId) {
+    var query = "SELECT Id, ContentDocumentId, FileType, CreatedDate ";
+    query += "FROM ContentVersion ";
+    query += "WHERE ContentDocumentId = '" + contentId + "' ";
+    query += "ORDER BY CreatedDate DESC LIMIT 1";
+    var record = sforce.connection.query(query).records;
+    showPreviewDialog(record.Id, titleElementId, record.FileType)
+}
+
+function showPreviewDialog(contentVersionId, titleElementId, fileFormat) {
+    OverlayDialogElement.showFilePreview(
+        'docViewerOverlay',
+        titleElementId,
+        '/_swf/196007/sfc',
+        contentVersionId,
+        'chatter_bubble',
+        'false',
+        'docViewerContainer',
+        false,
+        fileFormat,
+        false);
+};
+
+</script>
+<script>
+		$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('<i class="fa fa-plus-square-o" aria-hidden="true"></i></i> Advanced Search');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('<div><i class="fa fa-minus-square-o" aria-hidden="true"></i>  Advanced Search </div> <div><a href="#" data-toggle="modal" data-target="#myModal">  <i class="fa fa-floppy-o" aria-hidden="true"></i> Save Search</a> </div>');
+			  }
+			});
+		  });
+
+		});
+		
+		function hidemodal()
+		{
+		    $('#myModal').modal('hide');
+		}
+		</script>
+</apex:page>

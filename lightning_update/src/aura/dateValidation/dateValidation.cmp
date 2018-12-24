@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	 <aura:attribute name="myDate" type="date" />
+    <!--create dateValidationError boolean attribute for show error msg on invalid selection
+      and disable submit button -->    
+    <aura:attribute name="dateValidationError" type="boolean" />
+    
+    
+    <div class="slds-p-around_medium">
+        
+        <lightning:input class="{! v.dateValidationError ? 'slds-has-error' : ''}"
+                         type="date"
+                         label="Renewal Date"
+                         value="{!v.myDate}"
+                         name="date"
+                         onchange="{!c.dateUpdate}" />
+        
+        <aura:if isTrue="{!v.dateValidationError}">
+            <div class="slds-text-color_error slds-p-left_x-small">
+                Date must be in present or in future..
+            </div>
+        </aura:if>    
+        
+        <br/>
+        
+        <lightning:button disabled="{!v.dateValidationError}" variant="brand" onclick="{!c.submit}" label="Submit"></lightning:button>
+        
+    </div>       
+</aura:component>

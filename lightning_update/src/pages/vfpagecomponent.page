@@ -1,0 +1,4 @@
+<apex:page >
+    <c:vfcomponent record="Account" Textcolor="Red"/>
+    
+</apex:page>

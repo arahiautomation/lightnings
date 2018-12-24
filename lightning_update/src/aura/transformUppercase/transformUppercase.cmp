@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name ="county" type="String"/>
+    <lightning:input  label="County" aura:id="inputu" value="{!v.county}"/>
+    
+        <button label="submit" onclick="{!c.action}"/>  
+</aura:component>

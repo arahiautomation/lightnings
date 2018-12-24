@@ -1,0 +1,13 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+<apex:repeat var="a" value="{!accounts}">
+ 
+<Li>
+    <apex:outputLink value="/{!a.id}">
+    
+    
+    
+ </apex:outputLink>
+    
+</Li>
+    </apex:repeat>
+</apex:page>

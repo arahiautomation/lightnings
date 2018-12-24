@@ -1,0 +1,23 @@
+<apex:page showHeader="false" controller="CMFSH.CVFC_thanks">
+    
+    <style>
+        
+    </style>
+ <apex:composition template="{!$Site.Template}" >
+ <apex:define name="body" > 
+ <div class="row rowcss">
+     <div class="col-md-12">
+
+    <br/>
+    
+        Thanks for the Interview Feedback. 
+        <br/> 
+
+
+     </div >
+     
+     </div >
+  </apex:define>
+  </apex:composition>
+    
+</apex:page>

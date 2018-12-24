@@ -1,0 +1,90 @@
+<apex:page id="Cnd_page1" controller="CMFSH.CVFC_Candidate" showHeader="true" applyHtmlTag="true" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+<!-- <apex:page id="Cnd_page1" showHeader="true" controller="CVFC_Candidate"> -->
+<head>
+<apex:stylesheet value="{!URLFOR($Resource.CMFSH__slds,'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+</head>
+    
+<body >
+    <apex:pageMessages ></apex:pageMessages>
+   <div class="socialhire">  
+    <div class="socialhire slds-page-header" role="banner">
+        <div class="socialhire slds-grid">
+            <div class="socialhire slds-col slds-has-flexi-truncate">
+            <!-- HEADING AREA -->
+      
+                <h1 class="socialhire slds-page-header__title slds-truncate" title="Referrals">Add Candidates Internally</h1>
+            <!-- / HEADING AREA -->
+            </div>
+    
+        </div>
+ 
+    </div>
+    <!-- ERROR ALERT DIV -->
+    <apex:outputPanel layout="block" id="msg_block" style="display: none;">
+    <div id="err_wrapper"
+        
+         role="alert">
+            <h2>
+                <apex:pageMessages ></apex:pageMessages>
+            
+        </h2>
+    </div>
+ 
+</apex:outputPanel>
+    <apex:form >
+        <div class="socialhire slds-form slds-form_stacked">
+        <div class="socialhire slds-grid slds-wrap">
+            <apex:repeat value="{!fields}" var="f"> 
+            <div class="socialhire slds-p-horizontal--small slds-size--1-of-2">
+                        <div class="socialhire slds-form-element slds-hint-parent">
+                            <label class="socialhire slds-form-element__label" > {!f.Label}</label>
+                            <div class="socialhire slds-form-element__control">
+                                <apex:inputField value="{!field_disp[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"  styleClass="socialhire slds-input" />
+                            </div>
+                        </div>
+            </div>
+            </apex:repeat>
+        </div>
+        <div class="socialhire slds-p-horizontal--small slds-size--1-of-2">
+                        <div class="socialhire slds-form-element slds-hint-parent">
+                            <label class="socialhire slds-form-element__label" > Attach Resume</label>
+                            <div class="socialhire slds-form-element__control">
+                                <apex:inputFile value="{!file.body}" accept="doc, docx, txt, pdf,xls,xlsx" filesize="2000" filename="{!fileName}" id="fileAccept" styleClass="socialhire slds-input"></apex:inputFile>
+                            </div>
+                        </div>
+            </div>
+            <div class="socialhire slds-p-horizontal--small socialhire slds-m-top--medium socialhire slds-size--1-of-1 socialhire slds-align--absolute-center">
+                 <apex:commandButton action="{!SaveResult}" value="Save" styleClass="socialhire slds-button slds-button--neutral"/>
+                <apex:commandButton action="{!reset}" value="Reset" immediate="true"  html-formnovalidate="formnovalidate" styleClass="socialhire slds-button slds-button--neutral"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"  html-formnovalidate="formnovalidate" styleClass="socialhire slds-button slds-button--neutral"/>      
+            </div>
+        
+        </div>
+     
+    
+    <!--<apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:repeat value="{!fields}" var="f"> 
+                <apex:inputField value="{!field_disp[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"  styleClass="form-control"/>
+                          
+              </apex:repeat> 
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Attach Resumes" />
+                 <apex:inputFile value="{!file.body}" accept="doc, docx, txt, pdf,xls,xlsx" filesize="2000" filename="{!fileName}" id="fileAccept"></apex:inputFile>
+            </apex:pageBlockSectionItem>
+            
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!SaveResult}" value="Save" />
+            <apex:commandButton action="{!reset}" value="Reset" immediate="true"  html-formnovalidate="formnovalidate" />
+            <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"  html-formnovalidate="formnovalidate" />
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    -->
+    </apex:form> 
+    </div>
+    </body>
+</apex:page>

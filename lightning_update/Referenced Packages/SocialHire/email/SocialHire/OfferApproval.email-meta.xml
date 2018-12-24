@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SocialHire</letterhead>
+    <name>Offer Approval</name>
+    <style>freeForm</style>
+    <subject>Offer Waiting Approval</subject>
+    <textOnly>An offer letter is waiting for your approval.
+Position:{!Offer__c.Position__c}
+Candidate:{!Offer__c.Contact__c}
+
+You can review the offer by clicking here or Respond to email with text &quot;Approve&quot; or &quot;Reject&quot;</textOnly>
+    <type>html</type>
+</EmailTemplate>

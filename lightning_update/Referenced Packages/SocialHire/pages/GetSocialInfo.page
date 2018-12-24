@@ -1,0 +1,35 @@
+<apex:page standardController="contact" extensions="CMFSH.CVFE_Contact">
+
+<table width="90%" cellpadding="1" cellspacing="1">
+            <tr>
+                <td width="20%"><apex:image url="{!URLFOR($Resource.CMFSH__tweet, 'js/linkedin_form.png')}" width="100" height="27"/></td>
+                <td>
+                <!--<apex:outputLink value="{!LinkedinPersonURL}" id="LinkedinP" styleclass="searchresult" target="_blank" rendered="{!contacts.Previous_Orgs_worked_for_Last_2__c != null}">Search Results for {!contacts.Previous_Orgs_worked_for_Last_2__c} + {!contacts.name} </apex:outputLink>
+                    <apex:outputLink value="{!LinkedinPersonURL}" id="LinkedinP1" styleclass="searchresult" target="_blank" rendered="{!contacts.Your_Previous_Company__c != null && contacts.Previous_Orgs_worked_for_Last_2__c == null}">Search Results for {!contacts.Your_Previous_Company__c} + {!contacts.name} </apex:outputLink>
+                   
+                    <apex:outputLink value="{!LinkedinPersonURL}" id="LinkedinP2" styleclass="searchresult" target="_blank" rendered="{!contacts.Your_Previous_Company__c == null && contacts.Previous_Orgs_worked_for_Last_2__c == null}">Search Results for  {!contacts.name} </apex:outputLink>
+                -->
+                    <apex:outputLink value="{!LinkedinPersonURL}" id="LinkedinP2" styleclass="searchresult" target="_blank" >Search Results for  {!contacts.name} </apex:outputLink>
+                </td>
+                <td><apex:image url="{!URLFOR($Resource.CMFSH__tweet, 'js/google-logo_formula.png')}" width="61" height="27"/></td>
+                <td>
+                <!--<apex:outputLink value="{!googleQuery}" id="theLink" styleclass="searchresult" target="_blank" rendered="{!contacts.Previous_Orgs_worked_for_Last_2__c != null}">Search Results for {!CONTACTS.Previous_Orgs_worked_for_Last_2__c} +  {!CONTACTS.name} </apex:outputLink>
+                    <apex:outputLink value="{!googleQuery}" id="theLin1" styleclass="searchresult" target="_blank" rendered="{!contacts.Your_Previous_Company__c != null && contacts.Previous_Orgs_worked_for_Last_2__c == null}">Search Results for {!CONTACTS.Your_Previous_Company__c} +  {!CONTACTS.name} </apex:outputLink>
+                    <apex:outputLink value="{!googleQuery}" id="theLin2" styleclass="searchresult" target="_blank" rendered="{!contacts.Your_Previous_Company__c == null && contacts.Previous_Orgs_worked_for_Last_2__c == null}">Search Results for   {!CONTACTS.name} </apex:outputLink>
+                -->    
+                    <apex:outputLink value="{!googleQuery}" id="theLin2" styleclass="searchresult" target="_blank" >Search Results for   {!CONTACTS.name} </apex:outputLink>
+                    
+                </td>
+            </tr>
+                <tr>
+                <td width="20%"><apex:image url="{!URLFOR($Resource.CMFSH__Twittericon)}" /></td>
+                <td><apex:outputLink value="{!twitterurl}" id="Twitter" styleclass="searchresult" target="_blank" >Search Results in Twitter </apex:outputLink>
+                </td>
+                <td><apex:image url="{!URLFOR($Resource.CMFSH__FacebookIcon)}" /></td>
+                <td><apex:outputLink value="{!Facebookurl}" id="facebook" styleclass="searchresult" target="_blank" >Search Results in Facebook</apex:outputLink>
+                </td>
+            </tr>
+            
+        </table>
+
+</apex:page>

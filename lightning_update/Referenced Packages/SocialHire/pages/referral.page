@@ -1,0 +1,62 @@
+<apex:page controller="CMFSH.CVFC_redirectForRefEmail" showHeader="true" applyHtmlTag="true" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+<head>
+<apex:stylesheet value="{!URLFOR($Resource.CMFSH__slds,'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+</head>
+<body >
+   <div class="socialhire">
+ 
+    <div class="socialhire slds-page-header" role="banner">
+        <div class="socialhire slds-grid">
+            <div class="socialhire slds-col slds-has-flexi-truncate">
+            <!-- HEADING AREA -->
+      
+                <h1 class="socialhire slds-page-header__title slds-truncate" title="Referrals">Referrals</h1>
+            <!-- / HEADING AREA -->
+            </div>
+    
+        </div>
+ 
+    </div>
+    <apex:form >
+       
+       <div class="socialhire slds-form socialhire slds-form_horizontal">
+       <div class="socialhire slds-form-element">
+			<label class="socialhire slds-form-element__label" for="link-01">Employee Referral Site</label>
+			<div class="socialhire slds-form-element__control">
+			    <a href="{!externalSite}" id="link-01">{!externalSite}</a> 
+			</div>
+		</div>
+       </div>     
+                
+          
+               
+                  
+                  
+                  
+                  <div class="socialhire slds-modal__footer">
+                      <apex:commandButton value="Preview and Send Referral Email" action="{!redirect}" styleClass="socialhire slds-button socialhire slds-button--neutral"/>
+						
+				 </div>
+             
+    </apex:form>
+    </div>
+</body>
+<!--
+<apex:form >
+        <apex:pageblock >
+            <apex:pageBlockbuttons >
+                <apex:commandButton value="Preview and Send Referral Email" action="{!redirect}"/>
+            </apex:pageBlockbuttons>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                  <apex:outputLabel value="Employee Referral Site"/>
+                  <a href="{!externalSite}">{!externalSite}</a>
+              </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+    -->
+   
+</apex:page>

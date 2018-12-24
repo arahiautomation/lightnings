@@ -1,0 +1,23 @@
+<apex:page standardController="Contact" extensions="CMFSH.CVFE_Contact" sidebar="false">
+    <head>
+        <style>
+            .social
+            {
+                
+               //background-color: #00AEF0;
+                padding: 10px;
+            }
+            
+            .social span
+            {
+               padding: 5px;
+            }
+        </style>
+    </head>
+    <div class="social">
+       <span><apex:outputfield value="{!contacts.CMFSH__Twitter__c}"/> </span>
+       <span><apex:outputfield value="{!contacts.CMFSH__Facebook__c}"/> </span>
+       <span><apex:outputfield value="{!contacts.CMFSH__Linkedin__c}"/> </span>
+    </div>
+
+</apex:page>

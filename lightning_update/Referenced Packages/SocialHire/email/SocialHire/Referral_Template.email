@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Employee Referral for Positions" recipientType="Contact" >
+<messaging:htmlEmailBody >
+<div>
+<img src="https://c.ap1.content.force.com/servlet/servlet.ImageServer?id=0159000000BFfIT&oid=00D90000000uUJA&lastMod=1437561413000" />
+</div>
+<p>Hi,</p>
+<p>Below is a list of Positions available for Employee Referral.</p>
+    <c:refEmailTempComp />
+
+</messaging:htmlEmailBody>
+
+
+</messaging:emailTemplate>

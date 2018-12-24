@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="MyContactController" access="global" >
+    <aura:attribute name="contactlist" type="List"/>
+<aura:handler name="init" value="{!this}" action="{!c.getcontacts}"/>
+    <lightning:card title="Contacts">
+        
+        <aura:iteration items="{!v.contactlist}" var="contact">
+            <lightning:recordViewForm recordId="{!contact.Id}" objectApiName="Contact">
+                <lightning:outputField fieldName="FirstName"/>
+                <lightning:outputField fieldName="LastName"/>
+                <lightning:outputField fieldName="Phone"/>
+                <lightning:outputField fieldName="Email"/>
+            </lightning:recordViewForm> 
+            
+            </aura:iteration>  
+        
+    </lightning:card>    
+</aura:component>

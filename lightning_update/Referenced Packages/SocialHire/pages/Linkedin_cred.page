@@ -1,0 +1,33 @@
+<apex:page standardcontroller="CMFSH__linkedin__c"  extensions="CMFSH.CVFCExt_LinkedinCred" >
+	   <apex:sectionHeader Title="Manage {!$ObjectType.CMFSH__linkedin__c.LabelPlural}" subtitle="{!CMFSH__linkedin__c.Name}" id="PageSectionHeader" /> 
+		<apex:form >
+		    <!--
+		<apex:pageBlock >
+			<apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+            </apex:pageBlockButtons> 
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+			<apex:pageBlockSection >
+				<apex:inputField value="{!linkedin.name}" />
+				<apex:inputField value="{!linkedin.Company__c}" />
+				<apex:pageBlockSectionItem >
+				<apex:outputLabel value="API Key" />
+				<apex:outputPanel styleClass="requiredInput" layout="block">
+					<div class="requiredBlock"></div>
+					<apex:inputText value="{!APIKey}" required="true"/>
+				</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Secret Key" />
+				<apex:outputPanel styleClass="requiredInput" layout="block">
+					<div class="requiredBlock"></div>
+					<apex:inputText value="{!SecretKey}" required="true"/>
+				</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:inputField value="{!linkedin.Redirect_URI__c}" />
+				<apex:inputField value="{!linkedin.State__c}" />
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+		-->
+		</apex:form>
+</apex:page>

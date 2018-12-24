@@ -1,0 +1,5 @@
+<apex:page >
+<!--  <apex:form >
+      <apex:commandButton action="{!sendEmail}" value="Send email to CM-Focus"/>
+  </apex:form>-->
+</apex:page>

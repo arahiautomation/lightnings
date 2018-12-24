@@ -1,0 +1,95 @@
+<apex:page controller="CMFSH.CVFC_Interview" showHeader="false">
+     
+  
+  <style>
+       
+        .tableStyle{
+            padding-left:50px;
+            font-size:14px;
+            font-family:'trebuchet ms', helvetica, sans-serif;
+            color:#343434;
+        }
+        .cm_formCss{
+             height:100%;
+             margin:auto;
+             width:960px;
+            
+
+        }
+        .tdStyleFirst{
+            height:25px;
+            margin-bottom:13px;
+            margin-left:2px;
+            width:50%;
+        }
+        .tdStyleSecond{
+            height:25px;
+            
+        }
+        
+        .form-horizontal .control-label{
+        /* text-align:right; */
+        text-align:left;
+
+        }
+        
+        .form-horizontal .form-control{
+        /* text-align:right; */
+        text-align:left;
+
+        }
+            
+    </style>
+    
+     <apex:composition template="{!$Site.Template}" >
+    <apex:define name="body" >
+        <apex:pageMessages ></apex:pageMessages> 
+        <apex:form id="Feedback_form" styleClass="form-horizontal">
+           <div class="skillsCSS"> Client Feedback Form</div>
+             <br/> <br/>      
+              <div class="form-group">
+                  <div class="control-label col-xs-3">
+                    <apex:outputlabel styleclass="control-label " value="Position"  />
+                  </div>                
+                  <div class="control-label col-xs-9">
+                      <apex:outputField value="{!interviews.position__r.name}"  styleClass="form-control"/>
+                  </div>                         
+              </div>
+              <div class="form-group">
+                  <div class="control-label col-xs-3">
+                    <apex:outputlabel styleclass="control-label " value="Candidate"  />
+                  </div>                
+                  <div class="control-label col-xs-9">
+                      <apex:outputfield value="{!interviews.CMFSH__Candidate_Name__c}"  styleClass="form-control"/>
+                  </div>                         
+              </div>
+             <apex:repeat value="{!fields}" var="f"> 
+                    
+                   <div class="form-group">
+                    
+                         <!--  <td class="tdStyleFirst">  -->
+                          <div class="control-label col-xs-3">
+                             <apex:outputlabel styleclass="control-label " value="{!f.Label}"  />
+                         </div>                
+                         <div class="control-label col-xs-9">
+                             
+                              <apex:inputField value="{!interviews[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"  styleClass="form-control"/>
+                          </div>                         
+                    </div>        
+                    
+              </apex:repeat> 
+                 
+                       <div class="form-group">
+                       <label for="inputEmail" class="control-label col-xs-4"> </label>                          
+                         <div class="col-xs-6">
+                          <apex:commandButton action="{!SaveResult}" value="Submit" styleclass="btn btn-primary"/>
+                               <apex:commandButton action="{!reset}" value="Reset"  styleclass="btn btn-primary"/>
+                              
+                         </div>
+                      </div>
+                     
+        </apex:form>
+    </apex:define>
+  </apex:composition>
+
+</apex:page>

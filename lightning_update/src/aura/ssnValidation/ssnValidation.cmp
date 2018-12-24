@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+   <div class="slds-grid slds-wrap slds-grid--pull-padded">
+    <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3">
+    <ui:inputText  label="ssn" aura:id="social" />
+    </div>
+    </div>
+    <br/>
+    <lightning:button class="slds-button" label="submit" variant="brand" onclick="{!c.socialchange}"/>
+</aura:component>

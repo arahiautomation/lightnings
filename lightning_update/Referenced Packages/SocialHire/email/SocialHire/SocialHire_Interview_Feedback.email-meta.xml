@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SocialHire</letterhead>
+    <name>SocialHire Interview Feedback</name>
+    <style>freeForm</style>
+    <subject>Interview Feedback For {!Feedback__c.Candidate_Name_No_Link__c}</subject>
+    <textOnly>{!Feedback__c.Interviewer__c},
+Please fill out feedback by visiting site {!Feedback__c.Feedback_Form__c}
+Candidate:{!Feedback__c.Candidate_Name_No_Link__c}
+Position:{!Feedback__c.Position_Title_No_Link__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,192 @@
+ WARN [2018-12-23 00:00:33,945] (ComponentResource.java:loadFromFile:430) - File 'src/package.xml' does not exist
+ WARN [2018-12-23 00:01:11,242] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+ WARN [2018-12-23 00:01:11,255] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+ WARN [2018-12-23 00:01:11,268] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+ WARN [2018-12-23 00:01:11,376] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+ WARN [2018-12-23 00:01:11,384] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+ WARN [2018-12-23 00:01:11,395] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+ WARN [2018-12-23 00:01:11,406] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+ WARN [2018-12-23 00:01:11,425] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+ WARN [2018-12-23 00:01:11,435] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+ WARN [2018-12-23 00:01:11,446] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+ WARN [2018-12-23 00:01:11,457] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+ WARN [2018-12-23 00:01:11,468] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+ WARN [2018-12-23 00:01:11,480] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+ WARN [2018-12-23 00:01:11,489] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+ WARN [2018-12-23 00:01:11,498] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+ WARN [2018-12-23 00:01:11,539] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+ WARN [2018-12-23 00:01:11,554] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Workbench.
+ WARN [2018-12-23 00:01:11,564] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_Migration_Tool.
+ WARN [2018-12-23 00:01:11,573] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Mobile_Dashboards.
+ WARN [2018-12-23 00:01:11,581] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Touch.
+ WARN [2018-12-23 00:01:11,589] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_for_Outlook.
+ WARN [2018-12-23 00:01:11,599] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Bulk.
+ WARN [2018-12-23 00:01:11,609] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Partner.
+ WARN [2018-12-23 00:01:11,618] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_IDE.
+ WARN [2018-12-23 00:01:11,627] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+ WARN [2018-12-23 00:01:11,637] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+ WARN [2018-12-23 00:01:11,649] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'eProdigy Package/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:eProdigy_Dev.
+ WARN [2018-12-24 10:03:22,581] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:03:22,612] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ERROR [2018-12-24 10:03:22,622] (ComponentSubscriber.java:loadRemoteComponents:70) - Unable to load synchronize with server: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:03:22,672] (SynchronizeHandler.java:sync:129) - Unable to synchronize resources with server: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:03:48,548] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:03:48,574] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ERROR [2018-12-24 10:03:48,591] (AddOnlineNatureHandler.java:addOnlineNature:41) - Unable to apply Force.com Online Nature to project 'lightning_update'.
+com.salesforce.ide.core.remote.InvalidLoginException: Invalid username, password, security token; or user locked out.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:67)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:301)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$93d8b0cc.login(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getNewConnection(ConnectionFactory.java:82)
+	at com.salesforce.ide.core.factories.ConnectionFactory.storeConnection(ConnectionFactory.java:167)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:134)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:157)
+	at com.salesforce.ide.ui.handlers.AddOnlineNatureHandler.addOnlineNature(AddOnlineNatureHandler.java:39)
+	at com.salesforce.ide.ui.handlers.AddOnlineNatureHandler.execute(AddOnlineNatureHandler.java:33)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:431)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: [LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+ extendedErrorDetails='{[0]}'
+ upgradeURL='null'
+ upgradeMessage='null'
+]
+]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:673)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:548)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:236)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:210)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:156)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:99)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1065)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:254)
+	... 69 more
+ WARN [2018-12-24 10:05:15,673] (Utils.java:loadDocument:807) - Unable to load document: C:\Users\P\lightning\.metadata\.plugins\org.eclipse.core.resources\.projects\lightning_update\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ WARN [2018-12-24 10:06:11,672] (BaseBuilder.java:checkSkipBuilder:86) - Skipping build - user credentials not found
+ WARN [2018-12-24 10:13:22,294] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:13:22,309] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:13:22,309] (ProjectPropertyPage.java:updateProject:168) - Invalid login credentials: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:14:12,015] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:14:12,037] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:14:12,037] (ProjectPropertyPage.java:updateProject:168) - Invalid login credentials: Invalid username, password, security token; or user locked out.
+ WARN [2018-12-24 10:16:48,690] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+ WARN [2018-12-24 10:16:48,786] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+ WARN [2018-12-24 10:16:48,802] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+ WARN [2018-12-24 10:16:48,808] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+ WARN [2018-12-24 10:16:48,824] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+ WARN [2018-12-24 10:16:48,824] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+ WARN [2018-12-24 10:16:48,840] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+ WARN [2018-12-24 10:16:48,840] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+ WARN [2018-12-24 10:16:48,855] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+ WARN [2018-12-24 10:16:48,855] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+ WARN [2018-12-24 10:16:48,871] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+ WARN [2018-12-24 10:16:48,871] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+ WARN [2018-12-24 10:16:48,887] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+ WARN [2018-12-24 10:16:48,887] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+ WARN [2018-12-24 10:16:48,902] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+ WARN [2018-12-24 10:16:48,909] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+ WARN [2018-12-24 10:16:48,909] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Workbench.
+ WARN [2018-12-24 10:16:48,924] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_Migration_Tool.
+ WARN [2018-12-24 10:16:48,924] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Mobile_Dashboards.
+ WARN [2018-12-24 10:16:48,940] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Touch.
+ WARN [2018-12-24 10:16:48,940] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_for_Outlook.
+ WARN [2018-12-24 10:16:48,956] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Bulk.
+ WARN [2018-12-24 10:16:48,956] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Partner.
+ WARN [2018-12-24 10:16:48,971] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_IDE.
+ WARN [2018-12-24 10:16:48,971] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+ WARN [2018-12-24 10:16:48,987] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+ WARN [2018-12-24 10:16:48,987] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'eProdigy Package/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:eProdigy_Dev.
+ERROR [2018-12-24 10:16:50,772] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1066)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:996)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob$ForceProjectRefreshProject.doSaveResources(ForceProjectRefreshJob.java:62)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob.runInWorkspace(ForceProjectRefreshJob.java:42)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+ WARN [2018-12-24 10:17:10,088] (ProjectPackageList.java:handleReadOnlyException:1093) - Skipping all further read-only exceptions

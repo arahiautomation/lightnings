@@ -1,0 +1,726 @@
+!SESSION 2018-12-22 23:58:08.773 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_192
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\P\lightning -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-22 23:58:35.301
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\P'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.mule.tooling.ui 2 0 2018-12-22 23:58:36.058
+!MESSAGE Could not reset the Mule perspective
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:38.801
+!MESSAGE Started Node.js v5.9.1 (V8 v4.6.85.31) in 4.596 s
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:39.999
+!MESSAGE Loading tern.js...
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:40.134
+!MESSAGE Loading library ecma5
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:40.389
+!MESSAGE Loading library browser
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:40.958
+!MESSAGE Loading library ecma6
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:41.437
+!MESSAGE Loading plugin doc_comment
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:41.827
+!MESSAGE Loading plugin aura
+
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:45.263
+!MESSAGE Tern.js (0.19.0) ready
+
+
+!ENTRY com.yattasolutions.umllab 4 0 2018-12-22 23:58:53.996
+!MESSAGE UML Lab internal error: Error acquiring license.
+!STACK 0
+java.lang.NullPointerException
+	at com.yattasolutions.obf.mv.h.a(SourceFile:591)
+	at F2LR3QHKDHRF5XMWWSYMBABZ5OMC4YVLAU5STQSSS7LSRJ3ODO4ZL6P7TBPCMQB7BRM2V5W6CUMXC6ZOXDOOV54LJUUK3KRJ5XAQ63KZM7QVKFVSFNAK57BCVTRMCXUX2YVX5LRXRETAIPLCNBJDJ4V3DJWY7JPQBY37OCYLQHGWGUXCLTTDONTYSOONYYRTCWTTFKBHO2QZK6MXLUYHAEZQUKCMICHGUW7DVCEVCRN3GBZTEOUDCCN4RCUYUZ3IZMSDTNU67SPXSGI2CIU7FFBRBX5ZTGLDRJH6YY4KI5WYISLQNVLDIJ3LAF67OTOS4AKEWKKTO2B6OT5EZPCYQLUUPRHIF7VS45RZU3CHC7MT2UIF4RUWILZLKCT3I5TINJT76ACRS2PFGO3LIBCLYLGP7PLDAXGSVWC7RVCRLSKCYNOU7HLETXZFO4762RRCRYPSXC3L2BXKJQHKJWYIJJ6INKX2N5LEDGT64EWRNCWDEYFKFN5T7L5HRF2URKK53QGGQDEOY34CUQVXPQRIAY6IXT7SXSABGXH3I5TW4C3BNN3SHXC6HX77RJ7OAVSX25LO2SUGWCSAWORHMFDQB4QIA6MZVQJ7PE2DT26YCLARHFJTLBI5MO7EMUKK3QKGM6IKTMRY24A6ATB2OQPFJ4M5ZSSCB2I6DTMXZRPAFPYZ72KDEGIDNT24VH4O32YYNY6SIZPPS6Y4PKYE2LVGL26H2LNW3B3N7HNEPZNYET6AX757PVIS7R2CMXKF3ELRLKPIKI2KJZNGJMJ3GAAYCPMXPDSTDMFTHS275Z5LWDDNUN5LDFNZQL6WB6ST2IJ53CCUCUTQ3PBXZQLTWG733P5WF7PDH3Q7TOWKHE3EC4ISSRHRVHITBTE7OJCBIMDJCG3VHI6KEVL7VER5YSXNY3X7OS3JDQUYWZQ5N3KCFPUPV73TJ6VID4V2XCTWQQBGAXA7AQW5ZGRR4OEICW3XLHFZD46ZEZHMGKUGF2MNZJKWDGLNQSYHJN2CTMB7ZXASDIAPIJGD2635FGV7JPEPPNVYW4EQHPB5LAQW7P6LLI3L7AAPBI4XHO7K5NGQHFGBVTWE2NDTSV7QR2R6733U3INCRA366SHHV3BCA2GDPDQFDPCU5MA4GPFRPZRYDNDGG63FOW4ERHWK7JKK4QJFMW74OU2JBLXTFUSMS734LHTBZJK2NZEK4CJBY77EKE5H2U4LE4IPCLCAD7CABMD5CX32BEEUM3C5JFM3SBQGIS64DH6AZ3DRGTWC3JL4T7KRTKGI5TWICGB3KP4OWQ2LGBPUSB/JWXTUBLGUZDIMB66LDYTJJFQQG.<unknown>(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2018-12-22 23:58:54.290
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.yattasolutions.obf.mv.h.a(SourceFile:591)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:504)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:610)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:350)
+	at com.yattasolutions.obf.oh.b$1.run(SourceFile:50)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.mule.tooling.analytics.errorsense.widgets.AnalyticsPopUp.open(AnalyticsPopUp.java:286)
+	at org.mule.tooling.ui.widgets.util.PopUpConsumer$1.run(PopUpConsumer.java:42)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:58.619
+!MESSAGE ':core' project is not available. Please add '<module>:core</module>' to your list of partial build modules. If using para, set 'ide-search-all-files: true' and run 'para refresh'
+
+!ENTRY mega.js.tern 1 0 2018-12-22 23:58:58.745
+!MESSAGE Analyzed Lightning System JavaScript Support in 110.5 ms
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:00:33.951
+!MESSAGE  WARN [2018-12-23 00:00:33,945] (ComponentResource.java:loadFromFile:430) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.244
+!MESSAGE  WARN [2018-12-23 00:01:11,242] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.257
+!MESSAGE  WARN [2018-12-23 00:01:11,255] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.349
+!MESSAGE  WARN [2018-12-23 00:01:11,268] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.377
+!MESSAGE  WARN [2018-12-23 00:01:11,376] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.385
+!MESSAGE  WARN [2018-12-23 00:01:11,384] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.396
+!MESSAGE  WARN [2018-12-23 00:01:11,395] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.409
+!MESSAGE  WARN [2018-12-23 00:01:11,406] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.426
+!MESSAGE  WARN [2018-12-23 00:01:11,425] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.436
+!MESSAGE  WARN [2018-12-23 00:01:11,435] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.447
+!MESSAGE  WARN [2018-12-23 00:01:11,446] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.458
+!MESSAGE  WARN [2018-12-23 00:01:11,457] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.470
+!MESSAGE  WARN [2018-12-23 00:01:11,468] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.481
+!MESSAGE  WARN [2018-12-23 00:01:11,480] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.490
+!MESSAGE  WARN [2018-12-23 00:01:11,489] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.499
+!MESSAGE  WARN [2018-12-23 00:01:11,498] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.542
+!MESSAGE  WARN [2018-12-23 00:01:11,539] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.555
+!MESSAGE  WARN [2018-12-23 00:01:11,554] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Workbench.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.565
+!MESSAGE  WARN [2018-12-23 00:01:11,564] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_Migration_Tool.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.574
+!MESSAGE  WARN [2018-12-23 00:01:11,573] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Mobile_Dashboards.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.582
+!MESSAGE  WARN [2018-12-23 00:01:11,581] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Touch.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.591
+!MESSAGE  WARN [2018-12-23 00:01:11,589] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_for_Outlook.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.600
+!MESSAGE  WARN [2018-12-23 00:01:11,599] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Bulk.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.610
+!MESSAGE  WARN [2018-12-23 00:01:11,609] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Partner.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.619
+!MESSAGE  WARN [2018-12-23 00:01:11,618] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_IDE.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.629
+!MESSAGE  WARN [2018-12-23 00:01:11,627] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.639
+!MESSAGE  WARN [2018-12-23 00:01:11,637] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-23 00:01:11.650
+!MESSAGE  WARN [2018-12-23 00:01:11,649] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'eProdigy Package/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:eProdigy_Dev.
+
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-23 00:02:25.670
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.team.internal.core.FileModificationValidatorManager.validateEdit(FileModificationValidatorManager.java:41)
+	at org.eclipse.core.resources.team.FileModificationValidator.validateEdit(FileModificationValidator.java:61)
+	at org.eclipse.core.internal.resources.Workspace$7.run(Workspace.java:2480)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.Workspace.validateEdit(Workspace.java:2483)
+	at mega.ui.commands.EditorCommandsHandler.execute(EditorCommandsHandler.java:57)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:431)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+!SESSION 2018-12-23 21:42:10.956 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_192
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-12-23 21:42:26.699
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:41.969
+!MESSAGE Started Node.js v5.9.1 (V8 v4.6.85.31) in 2.466 s
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.231
+!MESSAGE Loading tern.js...
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.231
+!MESSAGE Loading library ecma5
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.285
+!MESSAGE Loading library browser
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.300
+!MESSAGE Loading library ecma6
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.300
+!MESSAGE Loading plugin doc_comment
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:42.332
+!MESSAGE Loading plugin aura
+
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:43.189
+!MESSAGE Tern.js (0.19.0) ready
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-23 21:43:51.256
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\P'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.mule.tooling.ui 2 0 2018-12-23 21:43:51.272
+!MESSAGE Could not reset the Mule perspective
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:54.725
+!MESSAGE ':core' project is not available. Please add '<module>:core</module>' to your list of partial build modules. If using para, set 'ide-search-all-files: true' and run 'para refresh'
+
+!ENTRY mega.js.tern 1 0 2018-12-23 21:43:54.946
+!MESSAGE Analyzed Lightning System JavaScript Support in 187.7 ms
+
+!ENTRY com.yattasolutions.umllab 4 0 2018-12-23 21:44:21.475
+!MESSAGE UML Lab internal error: Error acquiring license.
+!STACK 0
+java.lang.NullPointerException
+	at com.yattasolutions.obf.mv.h.a(SourceFile:591)
+	at Q57A2452SO3GEI6YNSH5WKVMPPALYODK46RUH2OEJTEJCLX6HP6HEE6HOF3K3IG5QI5UBZZIRBFG36WEG22ZDZSE5DVT3XINON2HWBIWGTJDAEJ6PJESZZ47AZQZBSCJUD4VKKBURO3P2G5GC7UHMOYGDAJ7D77IPQUD5UG6SCIJ2XZB57W75JSDU7TP75PD3AHJJV6BW7G6ZXTVZB4A5CZKQDWGGSXZJKKHT2JBPNR2UAHXNBIMETLX7FIQU4NDWO3GNKROH4HYN3D7Y33RL34FG3XNQ442OVU7DYM6P4YLSZIGHV7BACYCFA3OPZ5OHRBK3PZHZ6TACRSL7RDBKALZF5DXLKYE57VKPOOY6MQ33XMUSY7DQAYNJEAZKVNT2JDYVDPS5427QDRINBXKB4G7KWBIDJHCBYYCU4NZ6IQPFX54LY5BMGGWZ4BKDJGDWOIBB7JHCLRAYJF5NW6PPTIPXGWN3IPGGWWXMFIARGWPIMPFAWYRDSDTRNYTALHOUJWDGKL4X54M2JCGHQ7FVEW2SK25TUAHUNBS4Q4KCYW5NTFWOIAGBKDWB6ASUSNEZAO3DDZYTDQ6WL7COKZ6H4UBTL7I6SP7G7L2I66KMKYUEBBZ4LJKCL336YK554NWN747MNVI3STZMHS3SREHF3RMPK2D7RPPC24RWIB6OWMZA7NB5J5C3OUCM6QEZE35XAISAW5VXHHXSLPVOUTAN5TUOIGLT4LRDCQ7NPRNNBTYRNQAGO2VYLRZYEIWH6ZYZNIBF6TFCDHHGXDN6JVSZFUBW7UAWSXSIR3N53MGW5HQ5BWC52S2VFRW27EZFR4O2MEWTKRG7FT5FCZKPSRHFMX3RRI2UO5TZEWD2WYCVA4WJOM3HJL5DP57T3T5SHG3OUILMJM3IKNMD6VKQFEEORUILFPJIJCCD7XUALQ34CUGKXOZETSG7A6SQEHZPP5YYCN3ZLRVH22TLWSWHDPJALVVGMT6KV72UDIHG4WKTVS7CURDDLYNXUT6MJ3BVTR6FO7XTFAAG65BEHLBALFSUQUJP2DDY7HV24J7QOCQ5CMWFNF77LQYJA3SM7YGLW7UY2RKGNENAIY6B2MSAQGDS4Z4AZ7TRBS6Z7JYKBGHDDX6KTAYKWVPR2XHWUTNS62MXR2LEEKSBJQVD4CIXGHDELRPBVZWUFUNK2RW5UCMJA246JIBZJDYM7QI67DGCSWMKTFHKTBLO4J6PRJCXY3WY3QF5FIWHLTHDZLLJWOM3RXACWX4LJ6CVLGFIA5XYRJRLEBK5ECTL73DIWDPMFIJ434CBH/PHVJZNM3HUHDNHWMJRSZY5FXFF.<unknown>(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2018-12-23 21:44:21.747
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.yattasolutions.obf.mv.h.a(SourceFile:591)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:504)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:610)
+	at com.yattasolutions.obf.mv.h.a(SourceFile:350)
+	at com.yattasolutions.obf.oh.b$1.run(SourceFile:50)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.mule.tooling.analytics.errorsense.widgets.AnalyticsPopUp.open(AnalyticsPopUp.java:286)
+	at org.mule.tooling.ui.widgets.util.PopUpConsumer$1.run(PopUpConsumer.java:42)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.core.runtime 2 0 2018-12-24 10:03:21.848
+!MESSAGE Authorization infrastructure (org.eclipse.core.runtime.compatibility.auth) not installed.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.core.internal.runtime.auth.AuthorizationDatabase cannot be found by org.eclipse.core.runtime_3.13.0.v20170207-1030
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.getAuthClass(AuthorizationHandler.java:48)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.loadKeyring(AuthorizationHandler.java:69)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.getAuthorizationInfo(AuthorizationHandler.java:262)
+	at org.eclipse.core.runtime.Platform.getAuthorizationInfo(Platform.java:629)
+	at com.salesforce.ide.core.services.ProjectService.migrateOldAuthInfoAndGetNewCredentials(ProjectService.java:1694)
+	at com.salesforce.ide.core.services.ProjectService.getForceProject(ProjectService.java:1675)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:156)
+	at com.salesforce.ide.core.services.PackageRetrieveService.retrievePackage(PackageRetrieveService.java:240)
+	at com.salesforce.ide.ui.sync.SyncController.handleSourceRetrieve(SyncController.java:127)
+	at com.salesforce.ide.ui.sync.SyncController.loadRemoteComponents(SyncController.java:104)
+	at com.salesforce.ide.ui.sync.ComponentSubscriber.loadRemoteComponents(ComponentSubscriber.java:68)
+	at com.salesforce.ide.ui.sync.ComponentSyncParticipant.execute(ComponentSyncParticipant.java:101)
+	at com.salesforce.ide.ui.handlers.SynchronizeHandler$1.run(SynchronizeHandler.java:152)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:03:22.604
+!MESSAGE  WARN [2018-12-24 10:03:22,581] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:03:22.613
+!MESSAGE  WARN [2018-12-24 10:03:22,612] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 4 0 2018-12-24 10:03:22.623
+!MESSAGE ERROR [2018-12-24 10:03:22,622] (ComponentSubscriber.java:loadRemoteComponents:70) - Unable to load synchronize with server: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:03:22.674
+!MESSAGE  WARN [2018-12-24 10:03:22,672] (SynchronizeHandler.java:sync:129) - Unable to synchronize resources with server: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:03:48.550
+!MESSAGE  WARN [2018-12-24 10:03:48,548] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:03:48.575
+!MESSAGE  WARN [2018-12-24 10:03:48,574] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 4 0 2018-12-24 10:03:48.596
+!MESSAGE ERROR [2018-12-24 10:03:48,591] (AddOnlineNatureHandler.java:addOnlineNature:41) - Unable to apply Force.com Online Nature to project 'lightning_update'.
+
+!STACK 0
+com.salesforce.ide.core.remote.InvalidLoginException: Invalid username, password, security token; or user locked out.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:67)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:301)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$93d8b0cc.login(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getNewConnection(ConnectionFactory.java:82)
+	at com.salesforce.ide.core.factories.ConnectionFactory.storeConnection(ConnectionFactory.java:167)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:134)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:157)
+	at com.salesforce.ide.ui.handlers.AddOnlineNatureHandler.addOnlineNature(AddOnlineNatureHandler.java:39)
+	at com.salesforce.ide.ui.handlers.AddOnlineNatureHandler.execute(AddOnlineNatureHandler.java:33)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:431)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: [LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+ extendedErrorDetails='{[0]}'
+ upgradeURL='null'
+ upgradeMessage='null'
+]
+]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:673)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:548)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:236)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:210)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:156)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:99)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1065)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:254)
+	... 69 more
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:05:15.675
+!MESSAGE  WARN [2018-12-24 10:05:15,673] (Utils.java:loadDocument:807) - Unable to load document: C:\Users\P\lightning\.metadata\.plugins\org.eclipse.core.resources\.projects\lightning_update\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:06:11.673
+!MESSAGE  WARN [2018-12-24 10:06:11,672] (BaseBuilder.java:checkSkipBuilder:86) - Skipping build - user credentials not found
+
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-12-24 10:09:21.832
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/dwagelaar/jar2uml/master/update/content.jar
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:13:22.294
+!MESSAGE  WARN [2018-12-24 10:13:22,294] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:13:22.309
+!MESSAGE  WARN [2018-12-24 10:13:22,309] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:13:22.309
+!MESSAGE  WARN [2018-12-24 10:13:22,309] (ProjectPropertyPage.java:updateProject:168) - Invalid login credentials: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:14:12.015
+!MESSAGE  WARN [2018-12-24 10:14:12,015] (BaseRetryAspect.java:isLoginExceptionRetryable:124) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:14:12.037
+!MESSAGE  WARN [2018-12-24 10:14:12,037] (BaseRetryAspect.java:isConnectionExceptionRetryable:159) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:14:12.037
+!MESSAGE  WARN [2018-12-24 10:14:12,037] (ProjectPropertyPage.java:updateProject:168) - Invalid login credentials: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.690
+!MESSAGE  WARN [2018-12-24 10:16:48,690] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.786
+!MESSAGE  WARN [2018-12-24 10:16:48,786] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.802
+!MESSAGE  WARN [2018-12-24 10:16:48,802] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.808
+!MESSAGE  WARN [2018-12-24 10:16:48,808] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.824
+!MESSAGE  WARN [2018-12-24 10:16:48,824] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.824
+!MESSAGE  WARN [2018-12-24 10:16:48,824] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.840
+!MESSAGE  WARN [2018-12-24 10:16:48,840] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.840
+!MESSAGE  WARN [2018-12-24 10:16:48,840] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.855
+!MESSAGE  WARN [2018-12-24 10:16:48,855] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: DocuSignOrg__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.855
+!MESSAGE  WARN [2018-12-24 10:16:48,855] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: ChatterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.871
+!MESSAGE  WARN [2018-12-24 10:16:48,871] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: AccountSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.871
+!MESSAGE  WARN [2018-12-24 10:16:48,871] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: RoleSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.887
+!MESSAGE  WARN [2018-12-24 10:16:48,887] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Organization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.887
+!MESSAGE  WARN [2018-12-24 10:16:48,887] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Localization__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.902
+!MESSAGE  WARN [2018-12-24 10:16:48,902] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: EnvelopeSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.909
+!MESSAGE  WARN [2018-12-24 10:16:48,909] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'DocuSign For Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: UserSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.909
+!MESSAGE  WARN [2018-12-24 10:16:48,909] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Workbench.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.924
+!MESSAGE  WARN [2018-12-24 10:16:48,924] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_Migration_Tool.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.924
+!MESSAGE  WARN [2018-12-24 10:16:48,924] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Mobile_Dashboards.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.940
+!MESSAGE  WARN [2018-12-24 10:16:48,940] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Touch.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.940
+!MESSAGE  WARN [2018-12-24 10:16:48,940] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_for_Outlook.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.956
+!MESSAGE  WARN [2018-12-24 10:16:48,956] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Bulk.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.956
+!MESSAGE  WARN [2018-12-24 10:16:48,956] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Partner.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.971
+!MESSAGE  WARN [2018-12-24 10:16:48,971] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_IDE.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.971
+!MESSAGE  WARN [2018-12-24 10:16:48,971] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.987
+!MESSAGE  WARN [2018-12-24 10:16:48,987] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'SocialHire/package.xml': Can't retrieve non-customizable CustomObject named: EncryptionSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:16:48.987
+!MESSAGE  WARN [2018-12-24 10:16:48,987] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'eProdigy Package/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:eProdigy_Dev.
+
+
+!ENTRY com.salesforce.ide.core 4 2 2018-12-24 10:16:50.661
+!MESSAGE Problems occurred when invoking code from plug-in: "com.salesforce.ide.core".
+!STACK 0
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1066)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:996)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob$ForceProjectRefreshProject.doSaveResources(ForceProjectRefreshJob.java:62)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob.runInWorkspace(ForceProjectRefreshJob.java:42)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.salesforce.ide.core 4 0 2018-12-24 10:16:50.772
+!MESSAGE ERROR [2018-12-24 10:16:50,772] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+
+!STACK 0
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1066)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:996)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob$ForceProjectRefreshProject.doSaveResources(ForceProjectRefreshJob.java:62)
+	at com.salesforce.ide.core.services.ForceProjectRefreshJob.runInWorkspace(ForceProjectRefreshJob.java:42)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.salesforce.ide.core 2 0 2018-12-24 10:17:10.088
+!MESSAGE  WARN [2018-12-24 10:17:10,088] (ProjectPackageList.java:handleReadOnlyException:1093) - Skipping all further read-only exceptions
+

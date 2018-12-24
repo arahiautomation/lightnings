@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SocialHire</letterhead>
+    <name>Candidate Application Link</name>
+    <style>freeForm</style>
+    <subject>Complete the Application</subject>
+    <textOnly>Dear {!ContactPosition__c.Candidate__c},
+
+Thank you for applying for the position {!ContactPosition__c.Position__c}.
+
+Please fill out the form below to complete the application
+{!ContactPosition__c.Application_Link__c}
+
+Best Regards
+
+SocialHire Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

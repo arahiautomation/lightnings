@@ -1,0 +1,101 @@
+<apex:page controller="CMFSH.linkedin" action="{!checkAuthorization}">
+<apex:stylesheet value="{!URLFOR($Resource.CMFSH__bootstrap, 'css/bootstrap-2.3.2.min.css')}"/>
+
+<apex:includeScript value="{!URLFOR($Resource.CMFSH__bootstrap,'js/jquery-2.1.0.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.CMFSH__bootstrap,'js/bootstrap-3.1.1.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.CMFSH__bootstrap,'js/bootstrap-multiselect.js')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.CMFSH__bootstrap,'css/bootstrap-multiselect.css')}"/>
+<!-- 
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.multiselect').multiselect({
+    includeSelectAllOption: true,
+    enableCaseInsensitiveFiltering: true,
+    maxHeight: 150 
+    })
+    
+  });
+</script>
+ -->
+ 
+ 
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $('.multiselect').multiselect({
+        
+    enableCaseInsensitiveFiltering: true,
+    maxHeight: 150 ,
+    numberDisplayed: 2,
+      onChange: function(option, checked) {
+        // Get selected options.
+        var selectedOptions = $('.multiselect option:selected');
+ 
+        if (selectedOptions.length >= 6) {
+          // Disable all other checkboxes.
+          var nonSelectedOptions = $('.multiselect option').filter(function() {
+            return !$(this).is(':selected');
+          });
+ 
+          var dropdown = $('.multiselect').siblings('.multiselect-container');
+          nonSelectedOptions.each(function() {
+            var input = $('input[value="' + $(this).val() + '"]');
+            input.prop('disabled', true);
+            input.parent('li').addClass('disabled');
+          });
+        }
+        else {
+          // Enable all checkboxes.
+          var dropdown = $('.multiselect').siblings('.multiselect-container');
+          $('.multiselect option').each(function() {
+            var input = $('input[value="' + $(this).val() + '"]');
+            input.prop('disabled', false);
+            input.parent('li').addClass('disabled');
+          });
+        }
+      }
+      
+    });
+  });
+</script>
+
+<style>
+    h3{
+        line-height: 20px;
+    }
+</style>
+ <apex:pageMessages ></apex:pageMessages>
+<apex:form >
+<apex:pageBlock >
+<!--
+<apex:pageBlockSection title="Select Groups"   >    
+     <apex:outputPanel >
+     <b><apex:outputText value="Select Groups: "></apex:outputText></b><br/>
+     <apex:selectList value="{!selectedGroups}" multiselect="true" styleClass="multiselect">
+        <apex:selectOptions value="{!groupSelectOption}"/>
+     </apex:selectList>
+     </apex:outputPanel>  
+</apex:pageBlockSection>
+
+<apex:pageblockSection title="Title and Description" > 
+<apex:outputPanel >
+    <div style="width:70px;"><b><apex:outputText value="Title: "></apex:outputText></b></div>
+    <div style="width:170px;"><apex:inputText value="{!title}" /></div> <br/>
+    
+    <div style="width:70px;"><b><apex:outputText value="Description: "></apex:outputText></b></div>
+    <div style="width:170px;"><apex:inputTextarea value="{!Description}" style="width:300px;height:100px" /></div><br/>
+    -->
+    <!--
+    <div style="width:70px;"><b><apex:outputText value="Share To Status: "></apex:outputText></b></div>
+    <div style="width:170px;"><apex:inputCheckbox value="{!shareIt}" /></div><br/>-->
+<!--
+</apex:outputPanel>       
+</apex:pageblockSection> 
+
+ <apex:pageBlockButtons >
+    <apex:commandButton action="{!postGroups}" value="Post to Groups" id="theButton"/>  
+ </apex:pageBlockButtons>
+ -->
+</apex:pageBlock>       
+</apex:form> 
+
+</apex:page>

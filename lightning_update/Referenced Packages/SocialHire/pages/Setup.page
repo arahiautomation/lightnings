@@ -1,0 +1,227 @@
+<apex:page id="SH_Setup" controller="CMFSH.CVFC_Setup" showHeader="true" applyHtmlTag="true" standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <apex:slds />
+    <style>
+.msgIcon {
+    display: none!important
+}
+.customMessage * {
+    color: #fff!important
+}
+.customMessage {
+    margin: 5px 0!important;
+    max-width: 1280px;
+    opacity: 1!important;
+    width: 100%;
+    font-size: 12px;
+    border: 0px;
+    padding-left: 10px;
+}
+.message {
+    opacity: .1
+}
+</style>
+<script src="{!URLFOR($Resource.aljs, '/jquery.aljs-all-with-moment.min.js')}"></script>
+<script>
+    $(document).ready(function(){
+       overridePageMessages();  
+       $('#date').datepicker({
+       onChange: function(datepicker) {
+           
+            // Specify the format      
+          var fileDate =moment(datepicker.selectedFullDate._d).format('MM/DD/YYYY');   
+       }
+       
+    });
+    });
+        
+    function overridePageMessages(){    
+        var textureEffect = '';
+        //Uncomment below line for texture effect on page messages
+        //textureEffect = 'slds-theme--alert-texture';
+                     
+        $('.warningM3').addClass('slds-notify slds-notify--toast slds-theme--warning customMessage '+textureEffect);          
+        $('.confirmM3').addClass('slds-notify slds-notify--alert slds-theme--success  customMessage '+textureEffect);    
+        $('.errorM3').addClass('slds-notify slds-notify--alert slds-theme--error customMessage '+textureEffect);                  
+        $('.infoM3').addClass('slds-notify slds-notify--toast customMessage '+textureEffect);    
+        $('.errorM3').removeClass('errorM3'); 
+        $('.confirmM3').removeClass('confirmM3'); 
+        $('.infoM3').removeClass('infoM3');   
+        $('.warningM3').removeClass('warningM3');  
+    }
+</script>
+</head>
+    
+    <body>
+        <apex:pagemessages />
+        <div class="slds-scope">
+            <div class=" slds-section slds-is-open">
+              <h3 class=" slds-section__title  slds-theme_shade">
+                <span class=" slds-truncate  slds-p-horizontal_small" title="Section Title">Permissions and Security for Socialhire</span>
+              </h3>
+              <div aria-hidden="false" class=" slds-section__content">
+                  <apex:form styleClass=" slds-form_horizontal">
+                      <fieldset class=" slds-form-element">
+                        <legend class=" slds-form-element__legend  slds-form-element__label">Choose Existing Site</legend>
+                        <div class=" slds-form-element__control">
+                           <apex:outputPanel >
+                           <apex:selectList value="{!selectedSite}" >
+                                <apex:selectOptions value="{!options}"/>
+                           </apex:selectList>
+                           OR <a href="/0DM/o?setupid=CustomDomain" target="_blank"> Create New Site</a>
+                           
+                           </apex:outputPanel> 
+                           <div class="slds-form-element__help">View <a href="https://drive.google.com/file/d/0B2tUoq5qMcNlTU1zVy1NSk10VHM/view?usp=sharing" target="_blank"> document </a> to setup your site</div>
+                        </div>
+                        
+                        
+                      
+                        
+                      </fieldset>
+                      
+                      <div class="slds-form-element__control slds-p-top_medium">
+                      <apex:commandlink action="{!applypermissions}" value="Apply Socialhire Permissions" target="_blank"  styleclass="slds-button slds-button_brand"/>
+                      <apex:commandlink action="{!updateProfile}" value="Update Site Profile" target="_blank"  styleclass="slds-button slds-button_brand"/> 
+                      View this <a href="https://drive.google.com/file/d/0B2tUoq5qMcNlMDJnWTRvYTNxQms/view?usp=sharing" target="_blank" >document</a> before updating Site Profile
+                      </div>
+                      
+                       
+                    </apex:form>
+              </div>
+            </div>
+            <apex:form styleClass=" slds-form_horizontal">
+            <div class=" slds-section slds-is-open">
+                <h3 class=" slds-section__title  slds-theme_shade">
+                    <span class=" slds-truncate  slds-p-horizontal_small" title="Section Title">Socialhire Site Settings</span>
+                </h3>
+                <div aria-hidden="false" class=" slds-section__content">
+                    
+                    
+                        
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Site Logo</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Logo_Static_Resource_name__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help">Upload Logo as <a href="/apexpages/setup/listStaticResource.apexp" target="_blank">Static Resource</a> and fill the name of the static resource in the above box. Static Resource has to be public </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Logo Alternate Text</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Logo__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help"> </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Logo image height</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Logo_image_Height__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help"> Numeric Value in px </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Logo redirection Url</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Logo_redirection_Url__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help">Specifiy the url to redirect when we click the logo </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Use sites in iframe</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Use_Sites_in_iframe__c}"/>
+                            </div>
+                            <div class="slds-form-element__help"> </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Site Url</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Site_Url__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help">Specifiy the url of Site </div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Custom CSS</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Custom_Css_StaticResource_Name__c}" styleclass="slds-input"/>
+                            </div>
+                            <div class="slds-form-element__help">Upload custom CSS as <a href="/apexpages/setup/listStaticResource.apexp" target="_blank">Static Resource</a> and fill the name of the static resource in the above box. Static Resource has to be public </div>
+                         </div>
+                         
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Hide Position Search on Home Page</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Hide_Search_on_home_page__c}" />
+                            </div>
+                            <div class="slds-form-element__help"></div>
+                         </div>
+                         <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-01">Check for Resume before saving candidate</label>
+                            <div class="slds-form-element__control">
+                              <apex:inputfield value="{!cs.CMFSH__Check_for_Resume_before_saving_Candidate__c}" />
+                            </div>
+                            <div class="slds-form-element__help"></div>
+                         </div>
+                         <!--  DATEPICKER CODE -->
+                         <!--<div class="slds-form-element ">
+                            <label class="slds-form-element__label" for="date">Files Batch Last Processed on</label>
+                            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+                                <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                                </svg>
+                                <input id="date" class="slds-input" type="text" placeholder="Pick a Date" label="Date Picker Label"/>
+                            </div>
+                        </div> -->
+                        <!-- / DATEPICKER CODE -->
+                         
+                         
+                    
+                </div>
+            </div>
+            <div class=" slds-section slds-is-open">
+                <h3 class=" slds-section__title  slds-theme_shade">
+                    <span class=" slds-truncate  slds-p-horizontal_small" title="Section Title">Socialhire Referral Settings</span>
+                </h3>
+                <div aria-hidden="false" class=" slds-section__content">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="input-id-01">Referral Email Template font</label>
+                        <div class="slds-form-element__control">
+                          <apex:inputfield value="{!cs.CMFSH__Referral_Email_Template_font__c}" styleclass="slds-input"/>
+                        </div>
+                    <div class="slds-form-element__help"></div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="input-id-01">Referral Email Template Table Header color</label>
+                        <div class="slds-form-element__control">
+                          <apex:inputfield value="{!cs.CMFSH__Referral_Email_Template_TH_color__c}" styleclass="slds-input"/>
+                        </div>
+                    <div class="slds-form-element__help"></div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="input-id-01">Referral Page Title</label>
+                        <div class="slds-form-element__control">
+                          <apex:inputfield value="{!ref.CMFSH__Page_Title__c}" styleclass="slds-input"/>
+                        </div>
+                    </div>
+                    <div class="slds-form-element__help"></div>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="input-id-01">Referral Page Content</label>
+                        <div class="slds-form-element__control">
+                          <apex:inputfield value="{!ref.CMFSH__Content__c}" styleclass="slds-input"/>
+                        </div>
+                    <div class="slds-form-element__help"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slds-form-element__control slds-p-top_medium">
+                <apex:commandlink action="{!save}" value="Save Settings"  styleclass="slds-button slds-button_brand"/> 
+            </div>
+            </div>
+            </apex:form>
+        </div>
+    </body>
+
+</apex:page>

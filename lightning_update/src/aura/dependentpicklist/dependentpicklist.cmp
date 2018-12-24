@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="parentOptions" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="dependentPicklist" type="object"/>
+    <aura:attribute name="dependentOptions" type="List"/>
+    <aura:attribute name="disabled" type="boolean" default="true"/>
+    
+        <Lightning:select name="parentPicklist" label="Country" aura:id="parentPicklist" onchange="{!c.pickchange}">
+        <option value="">None</option> 
+        <aura:iteration items="{!v.parentOptions}" var="p">
+        <option value="{!p.value}">{!p.text}</option>
+        
+        </aura:iteration>
+    </Lightning:select>
+    <Lightning:select name="dependentPicklist" label="cities" disabled="{!v.disabled}">
+        <option value="">None</option> 
+        <aura:iteration items="{!v.dependentOptions}" var="d">
+        <option value="{!d.value}">{!d.text}</option>
+        
+        </aura:iteration>
+    </Lightning:select>
+        
+</aura:component>

@@ -1,0 +1,105 @@
+<apex:page id="Cnd_page1" showHeader="false" controller="CMFSH.CVFC_Candidate" docType="">
+  
+  
+  
+  <style>
+       
+        .tableStyle{
+            padding-left:50px;
+            font-size:14px;
+            font-family:'trebuchet ms', helvetica, sans-serif;
+            color:#343434;
+        }
+        .cm_formCss{
+             height:100%;
+             margin:auto;
+             width:960px;
+            
+
+        }
+        .tdStyleFirst{
+            height:25px;
+            margin-bottom:13px;
+            margin-left:2px;
+            width:50%;
+        }
+        .tdStyleSecond{
+            height:25px;
+            
+        }
+        
+        .form-horizontal .control-label{
+        /* text-align:right; */
+        text-align:left;
+
+        }
+        
+        .form-horizontal .form-control{
+        /* text-align:right; */
+        text-align:left;
+
+        }
+            
+    </style>
+    
+ 
+  <apex:composition template="{!$Site.Template}" >
+    <apex:define name="body" > 
+        <apex:stylesheet value="{!customCssUrl}"/>
+        <apex:form id="Cnd_form" styleClass="form-horizontal">
+           <div class="candidateFormHeader"> Fill in the form below to submit your application</div>
+           <apex:pageMessages ></apex:pageMessages>
+             <br/> <br/>           
+             <apex:repeat value="{!fields}" var="f"> 
+                    
+                   <div class="form-group">
+                    
+                         <!--  <td class="tdStyleFirst">  -->
+                          <div class="control-label col-xs-3">
+                             <apex:outputlabel styleclass="control-label " value="{!f.Label}"  /><apex:outputLabel value="*" style="color:red;font-weight:bold" rendered="{!OR(f.required, f.dbrequired)}" />
+                         </div>                
+                         <div class="control-label col-xs-9">
+                             
+                              <apex:inputField value="{!field_disp[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"  styleClass="form-control" />
+                          </div>                         
+                    </div>        
+                    
+              </apex:repeat> 
+              <apex:repeat value="{!AppFields}" var="f"> 
+                    
+                   <div class="form-group">
+                    
+                         <!--  <td class="tdStyleFirst">  -->
+                          <div class="control-label col-xs-3">
+                             <apex:outputlabel styleclass="control-label " value="{!f.Label}"  /><apex:outputLabel value="*" style="color:red;font-weight:bold" rendered="{!OR(f.required, f.dbrequired)}" />
+                         </div>                
+                         <div class="control-label col-xs-9">
+                             
+                              <apex:inputField value="{!apps[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"  styleClass="form-control" />
+                          </div>                         
+                    </div>        
+                    
+              </apex:repeat> 
+                 
+                   <div class="form-group">
+                       <div class="col-xs-3">
+                       <apex:outputLabel value="Attach Resumes" styleclass="control-label "/>
+                       </div>
+                          <div class="col-xs-9">
+                            <apex:inputFile value="{!file.body}" accept="doc, docx, txt, pdf,xls,xlsx" filesize="2000" filename="{!fileName}" id="fileAccept"></apex:inputFile>
+                            </div>
+                      </div>
+                       <div class="form-group">
+                       <label for="inputEmail" class="control-label col-xs-4"> </label>                          
+                         <div class="col-xs-6">
+                            <apex:commandButton action="{!SaveResult}" value="Save" styleclass="btn btn-primary" />
+                            <apex:commandButton action="{!cancel}" value="Cancel"  styleclass="btn btn-primary" immediate="true"  html-formnovalidate="formnovalidate"/>
+                             <apex:commandButton action="{!goHome}" value="Return To All Jobs"  styleclass="btn btn-primary" immediate="true"  html-formnovalidate="formnovalidate"/>
+                            <apex:outputPanel id="dummy"></apex:outputPanel>
+                        </div>
+                      </div>
+                     
+        </apex:form>
+    </apex:define>
+  </apex:composition>
+</apex:page>

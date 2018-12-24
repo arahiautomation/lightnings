@@ -1,0 +1,12 @@
+<apex:page controller="RendererController">
+ <apex:form >
+  <apex:pageBlock >
+  <apex:commandButton value="showpageblock" action="{!showBlockMethod}"/>   
+     
+     </apex:pageBlock>
+      <apex:pageBlock rendered="{!showpageBlockFlag}">
+      <apex:outputField value="{!accrec.name}"/>
+       <apex:outputField value="{!accrec.accountnumber}"/>   
+      </apex:pageBlock>
+    </apex:form>   
+</apex:page>

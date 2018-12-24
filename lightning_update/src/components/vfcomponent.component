@@ -1,0 +1,13 @@
+<apex:component >
+    <apex:attribute name="record" description="showing the account record details." 
+                    type="Object" required="true"/>
+          <apex:attribute name="Textcolor" description="This Is description color" 
+                          type="String" required="true"/>
+    
+    <h1 style="color:{!Textcolor}">
+        <apex:pageBlock title="Viewing{!record}">
+            <Apex:detail />
+        </apex:pageBlock>
+        
+    </h1>
+</apex:component>

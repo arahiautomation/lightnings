@@ -1,0 +1,39 @@
+<apex:page showHeader="false" id="SiteTemplate" standardStylesheets="false">
+  <apex:stylesheet value="{!URLFOR($Resource.CMFSH__SitesResources, 'css/template1.css')}"/>
+
+
+    <!-- Latest compiled and minified CSS -->
+<apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+<!-- jQuery library -->
+<apex:includeScript value="{!URLFOR($Resource.CMFSH__socialShare, '/jquery.min.js')}"/> 
+<!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <div id="maincontainer">
+  <!--  <apex:outputText value="{!$Setup.CMFSH__SiteDomain__c.CMFSH__Use_Sites_in_iframe__c}"/>
+    <apex:outputText value="{!$Setup.CMFSH__SiteDomain__c.CMFSH__Use_Sites_in_iframe__c}"/> -->
+    <apex:outputPanel rendered="{!$Setup.SiteDomain__c.Use_Sites_in_iframe__c != true}"> 
+    <apex:insert name="header">
+    <c:siteHeaders />
+  
+  </apex:insert>
+   </apex:outputpanel> 
+    <!--<div class="container"> -->
+        <apex:insert name="body"/>
+    <!-- </div> -->
+    <apex:outputPanel rendered="{!$Setup.SiteDomain__c.Use_Sites_in_iframe__c}}">
+     <apex:insert name="footer">
+        <c:SiteFooter />
+    <site:googleAnalyticsTracking />
+  </apex:insert>  
+  </apex:outputpanel>
+  <div style="Padding-top : 20px;">
+  Powered by <a href="http://www.socialhire.io" target="_blank"> socialhire.io</a>
+  </div>
+  </div>
+
+</apex:page>
