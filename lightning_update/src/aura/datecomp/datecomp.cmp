@@ -1,0 +1,5 @@
+<aura:component>
+	<aura:attribute name="formattedvalue" type="String"/>
+	
+	<lightning:input lable="Date" aura:id="field" datepicker="true"  value={!v.formattedvalue}""format="MM/DD?YYYY"/>
+</aura:component>

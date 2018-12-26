@@ -7,5 +7,5 @@
     <c:ageValidation/>
     <c:ssnValidation/>
     <c:dateValidation/>
-    
+    <c:datecomp/>
 </aura:application>
