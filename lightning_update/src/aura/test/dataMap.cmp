@@ -1,0 +1,44 @@
+<aura:component>
+    <!--create myDate aura attribute for store date field value-->  
+    <aura:attribute name="myDate" type="date"/>
+    <aura:attribute name="mysetDate" type="date"/>
+    <!--create dateValidationError boolean attribute for show error msg on invalid selection
+      and disable submit button -->    
+    <aura:attribute name="dateValidationError" type="boolean" />
+    
+    
+    <div class="slds-p-around_medium">
+        <div class="slds-text-title_bold">
+        <lightning:input class="{! v.dateValidationError ? 'slds-has-error' : ''}"
+                         value="{!v.mysetDate}"
+                         label="Renewal Date"
+                         datepicker="true"
+                         required="true"
+                         type="date"
+                         aura:id="aa"
+                         onchange="{!c.dateUpdate}" 
+                         />
+
+        <ui:inputDate label="Calendar" value="{!v.myDate}"
+                      format="MM/DD/YYYY" displayDatePicker="true"
+                      required="true"
+                         />
+        
+ 
+        
+        <aura:if isTrue="{!v.dateValidationError}">
+            <div class="slds-text-color_error slds-p-left_x-small">
+                Date must be in present or in future..
+            </div>
+        </aura:if>    
+        
+        <br/>
+        
+        <lightning:button disabled="{!v.dateValidationError}"
+                          variant="brand" 
+                          onclick="{!c.submit}"
+                          label="Submit">
+                        </lightning:button>
+        </div>
+    </div>       
+</aura:component>
